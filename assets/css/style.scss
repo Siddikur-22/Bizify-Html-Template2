@@ -459,6 +459,9 @@ ul {
 .mb-20 {
   margin-bottom: 20px;
 }
+.pl-85 {
+  margin-left: 85px;
+}
 .mb-100 {
   margin-bottom: 100px;
 
@@ -1975,7 +1978,7 @@ header.style-1 {
 // topbar-area end
 // banner style start
 .banner-area {
-  background-image: url("../image/banner-img/Header.png");
+  background-image: url("../image/banner-img/Header-style1.png");
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3138,7 +3141,7 @@ header.style-1 {
 }
 // pricing-plan-section end
 // our testimonials section start
-.our-testimoinals-section {
+.our-testimonial-section {
   background-color: var(--span-color);
   .section-title {
     display: flex;
@@ -3819,11 +3822,12 @@ header.style-1 {
 .topbar-area.two {
   padding: 14px 0;
   margin: 0 20px;
-  min-height: 54px;
-  height: 100%;
+  height: 54px;
   display: flex;
   align-items: center;
   background-color:var(--primary-color);
+  width: 100%;
+  z-index: 1;
   @include xl-down-device() {
     margin: 0 10px;
   }
@@ -3849,12 +3853,6 @@ header.style-1 {
           align-items: center;
           gap: 6px;
           transition: 0.5s;
-          // &:hover{
-          //   svg{
-          //     fill: var(--primary-color2);
-          //   }
-          //   color: var(--primary-color2);
-          // }
         }
       }
     }
@@ -3877,12 +3875,6 @@ header.style-1 {
         align-items: center;
         gap: 8px;
         transition: 0.5s;
-        // &:hover{
-        //   svg{
-        //     fill: var(--primary-color2);
-        //   }
-        //   color: var(--primary-color2);
-        // }
       }
     }
   }
@@ -3934,7 +3926,6 @@ header.style-2 {
   z-index: 99;
   transition: all 0.8s ease-out 0s;
   background-color: transparent;
-  // padding-top: 90px;
   .header-area {
     background-color: var(--white-color);
     border-radius: 10px;
@@ -5038,6 +5029,74 @@ header.style-2 {
   }
 }
 // header style-1 end
+// banner section start
+.banner-section{
+  
+  p
+  swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    .section-title {
+      max-width: 565px;
+      width: 100%;
+      h2 {
+        font-family: var(--font-unbounded-sans);
+        font-weight: 500;
+        font-size: 70px;
+        line-height: 84px;
+        color:var(--title-color-1);
+        margin: 0;
+        text-align: start;
+        padding-bottom: 20px;
+      }
+      p{
+        font-family: var(--font-manrope);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: var(--title-color-1);
+        margin: 0;
+        padding-bottom: 40px;
+        text-align: start;
+      }
+      .primary-btn-two {
+        text-align: start;
+        a {
+          background-color: var(--primary-color);
+          color: var(--white-color);
+          font-family: var(--font-manrope);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 14px;
+          padding: 22px 48px;
+          border-radius: 6px;
+          display: inline-block;
+          &:hover {
+            background-color: var(--title-color-1);
+            color: var(--white-color);
+          }
+        }
+      }
+    
+      
+    }
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+}
+// banner section end
 // client-service-section start
 .client-service-section{
   .section-title {
@@ -5379,6 +5438,60 @@ header.style-2 {
   }
 }
 // about-section end
+// process section start
+.process-section{
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width:684px;
+    width: 100%;
+    padding-bottom: 54px;
+    h2 {
+      font-family: var(--font-unbounded-sans);
+      font-weight: 500;
+      font-size: 54px;
+      line-height: 64px;
+      color: var(--title-color-2);
+      margin: 0;
+    }
+  }
+  .process-card{
+   .process.img{
+    img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+   }
+    .process-content{
+      text-align: center;
+      padding-top: 24px;
+      h2{
+        font-family: var(--font-unbounded-sans);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--title-color-1);
+        margin: 0;
+        padding-bottom: 12px;
+      }
+      p{
+        font-family: var(--font-manrope);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 330px;
+        width: 100%;
+        color: rgba(63, 78, 80, 1);
+        margin: 0;
+      }
+    }
+  }
+}
+// process section end
 // blog-card-section-start
 .blog-section-two {
  
@@ -5743,24 +5856,165 @@ header.style-2 {
   }
 }
 // why-choose-us-section end
-// logo-section-start
-.logo-section-2{
-  .logo-wrap {
-    .logo-area {
-      .logo-wrap {
-        overflow: hidden;
-        margin: 0 auto;
-        a {
-          margin-left: 24px;
+// our testimonials section start
+.our-testimonial-section-two {
+  background-color: rgba(244, 245, 246, 1);
+  .section-title {
+    h2 {
+      font-family: var(--font-unbounded-sans);
+      font-weight: 500;
+      font-size: 54px;
+      line-height: 64px;
+      color: var(--title-color-1);
+      margin: 0;
+      padding-bottom: 20px;
+      max-width: 636px;
+      width: 100%;
+    }
+    p{
+      font-family: var(--font-manrope);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: var(--paragraph-color-2);
+      max-width: 416px;
+      width: 100%;
+      padding-bottom: 32px;
+    }
+  }
+  .slider-btn-and-pagination-wrap {
+    .slider-btn-group {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      .home3-testimonial-prev {
+        background-color: #ffffff;
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: var(--primary-color);
+          border: 1px solid --primary-color;
+          svg {
+            path {
+              fill: white;
+            }
+          }
+        }
+      }
+      .home3-testimonial-next {
+        background-color: #ffffff;
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: var(--primary-color);
+          border: 1px solid --primary-color;
+          svg {
+            path {
+              fill: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonial-wrap {
+    .testimonial-card {
+      background-color: rgba(255, 255, 255, 1);
+      padding: 40px;
+      @include xxl-down-device() {
+        padding: 35px 25px;
+      }
+      @include sm-down-device() {
+        padding: 30px 20px;
+      }
+     
+      .start-list {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        padding-bottom: 16px;
+      }
+      .content {
+        p {
+          font-family: var(--font-manrope);
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 40px;
+          color: var(--paragraph-color-2);
+          max-width: 666px;
+          width: 100%;
+          margin: 0;
+        }
+      }
+      .auhor-and-button-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .auhor-area {
+          padding-top: 32px;
+          display: flex;
+          gap: 24px;
+         
+        .author-img{
+          img{
+            height: 80px;
+          width: 80px;
+          background-position: center;
+          background-size: cover;
+          border-radius: 6px;
+        }
+        }
+          .content {
+            h2 {
+              font-family: var(--font-unbounded-sans);
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 30px;
+              color: var(--title-color-1);
+              margin: 0;
+              padding-bottom: 4px;
+            }
+            span {
+              font-family: var(--font-manrope);
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 26px;
+              color: rgba(82, 93, 113, 1);
+              margin: 0;
+            }
+          }
+        }
+     
+      }
+    }
+  }
+  .logo-section-2{
+    .logo-wrap {
+      .logo-area {
+        .logo-wrap {
+          overflow: hidden;
+          margin: 0 auto;
+          a {
+            margin-left: 24px;
+          }
         }
       }
     }
   }
 }
-// logo-section-end
+// our testimonials section end
+
 // faq-section-two start
 .faq-section-two {
-  background-color: #F4F5F6;
   position: relative;
   .faq-img {
    img{
@@ -5849,11 +6103,11 @@ header.style-2 {
       .accordion-header {
         .accordion-button {
           border: none;
-          border-radius: 10px;
+          border-radius: 10px 10px 0 0;
           box-shadow: none;
           color: var(--faq-colors);
           font-family: var(--font-unbounded-sans);
-          background-color: var(--white-color);
+          background-color:rgba(244, 245, 246, 1);
           font-weight: 500;
           font-size: 18px;
           line-height: 28px;
@@ -5888,14 +6142,14 @@ header.style-2 {
         }
       }
       .accordion-body {
-        background-color: var(--white-color);
+        background-color:rgba(244, 245, 246, 1);
         color: var(--paragraph-color-2);
         font-family: var(--font-manrope);
         font-size: 16px;
         font-weight: 400;
         line-height: 26px;
         letter-spacing: 0.48px;
-        border-radius: 10px;
+        border-radius:0 0 10px 10px;
         @include sm-down-device() {
           font-size: 14px;
           padding: 15px 10px;
@@ -5957,10 +6211,9 @@ header.style-2 {
     position: relative;
     height: 100%;
    img{
-    height: 100%;
+    height: 82.8%;
     object-fit: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    width: 100%;
    }
    .video-area{
     position: absolute;
@@ -5977,10 +6230,11 @@ header.style-2 {
   }
   .subscribe-content{
     background-color: var(--accordion-color);
+    height: 82.8%;
   .section-title {
     margin: 0 auto;
-    max-width: 575px;
-    width: 100%;
+    padding-left: 85px;
+    
     h2 {
       font-family: var(--font-unbounded-sans);
       font-weight: 500;
@@ -5989,6 +6243,8 @@ header.style-2 {
       color: var(--white-color);
       margin: 0;
       padding-bottom: 20px;
+      max-width: 575px;
+      width: 100%;
     }
     p {
       font-family: var(--font-manrope);
@@ -5998,46 +6254,39 @@ header.style-2 {
       color: rgba(244, 245, 246, 1);
       margin: 0;
       padding-bottom: 40px;
+      max-width: 575px;
+      width: 100%;
     }
     .subscribe-form-wrap {
       display: flex;
       align-items: center;
       gap: 24px;
-      .subscribe-form {
-        border-radius: 5px;
-        background: var(--white-color);
-        display: flex;
-        align-items: center;
+      input{
+        font-family: var(--font-manrope);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(63, 78, 80, 1);
+        padding: 14px 18px;
         max-width: 269px;
         width: 100%;
-        height: 54px;
-        padding: 10px 10px 10px 20px;
+        border-radius: 6px;
         margin: 0;
-        input {
-          width: 100%;
-          color: var(--white-color);
-          font-family: var(--font-manrope);
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 26px;
+      }
+      button{
+        a{
+        font-family: var(--font-unbounded-sans);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: var(--white-color);
+        margin: 0;
+        background-color: var(--primary-color);
+        padding: 20px 32px;
+        border-radius: 6px;
         }
       }
-      .submit {
-        a {
-          font-family: var(--font-unbounded-sans);
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 14px;
-          background-color: var(--primary-color);
-          color: var(--white-color);
-          margin: 0;
-          padding: 20px 32px;
-          display: inline-flex;
-          align-items: center;
-          border-radius: 6px;
-          text-decoration: none;
-        }
-      }
+  
     }
     
   }
@@ -6367,7 +6616,6 @@ header.style-2 {
     }
   }
 }
-
 // team section end
 // footer section start.
 .footer-section-2{
