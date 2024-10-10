@@ -2975,19 +2975,19 @@ header.style-1 .header-area.inner-page {
   color: var(--white-color);
 }
 @media (max-width: 1399px) {
-  .our-testimonial-section .testimonial-wrap .testimonial-card {
+  .our-testimonial-section .testimonial-card {
     padding: 35px 25px;
   }
 }
 @media (max-width: 576px) {
-  .our-testimonial-section .testimonial-wrap .testimonial-card {
+  .our-testimonial-section .testimonial-card {
     padding: 30px 20px;
   }
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .qoute-icon {
+.our-testimonial-section .testimonial-card .qoute-icon {
   margin-bottom: 24px;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .content p {
+.our-testimonial-section .testimonial-card .content p {
   font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 24px;
@@ -2999,23 +2999,23 @@ header.style-1 .header-area.inner-page {
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .auhor-area {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .auhor-area {
   padding-top: 36px;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .auhor-area .start-list {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .auhor-area .start-list {
   display: flex;
   align-items: center;
   gap: 2px;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .auhor-area .content {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .auhor-area .content {
   padding-top: 8px;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .auhor-area .content h2 {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .auhor-area .content h2 {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
   font-size: 24px;
@@ -3024,7 +3024,7 @@ header.style-1 .header-area.inner-page {
   margin: 0;
   padding-bottom: 4px;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .auhor-area .content span {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .auhor-area .content span {
   font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 16px;
@@ -3032,12 +3032,12 @@ header.style-1 .header-area.inner-page {
   color: var(--white-color);
   margin: 0;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev {
   background-color: #ffffff;
   border: 1px solid rgba(73, 82, 97, 0.5019607843);
   width: 60px;
@@ -3047,14 +3047,14 @@ header.style-1 .header-area.inner-page {
   align-items: center;
   justify-content: center;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev:hover {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev:hover {
   background-color: var(--primary-color);
   border: 1px solid --primary-color;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev:hover svg path {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev:hover svg path {
   fill: white;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next {
   background-color: #ffffff;
   border: 1px solid rgba(73, 82, 97, 0.5019607843);
   width: 60px;
@@ -3064,11 +3064,11 @@ header.style-1 .header-area.inner-page {
   align-items: center;
   justify-content: center;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next:hover {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next:hover {
   background-color: var(--primary-color);
   border: 1px solid --primary-color;
 }
-.our-testimonial-section .testimonial-wrap .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next:hover svg path {
+.our-testimonial-section .testimonial-card .auhor-and-button-wrap .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next:hover svg path {
   fill: white;
 }
 
@@ -3882,7 +3882,7 @@ header.style-2 .header-area .main-menu ul > li ul.sub-menu {
   background: var(--white-color);
   border: 1px solid rgba(13, 23, 32, 0.0784313725);
   text-align: left;
-  z-index: 1;
+  z-index: 99;
 }
 header.style-2 .header-area .main-menu ul > li ul.sub-menu > li {
   padding: 0;
@@ -4644,22 +4644,36 @@ header.style-2 .header-area.inner-page {
   border-bottom: 1px solid rgba(var(--title-color-opc), 0.08);
 }
 
-.banner-section .section-title {
+.banner-content-wrap {
+  position: relative;
+}
+.banner-content-wrap .banner-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  min-height: 100vh;
+  padding: 200px 0 220px;
+}
+.banner-content-wrap .banner-wrapper .banner-content .section-title {
   margin: 0 auto;
   text-align: center;
-  max-width: 856px;
+  max-width: 565px;
   width: 100%;
+  text-align: start;
 }
-.banner-section .section-title h2 {
+.banner-content-wrap .banner-wrapper .banner-content .section-title h2 {
   font-family: var(--font-unbounded-sans);
-  font-weight: 500;
-  font-size: 54px;
-  line-height: 64px;
-  color: var(--title-color-1);
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 84px;
+  color: var(--white-color);
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 }
-.banner-section .section-title p {
+.banner-content-wrap .banner-wrapper .banner-content .section-title p {
   font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 18px;
@@ -4668,7 +4682,7 @@ header.style-2 .header-area.inner-page {
   margin: 0;
   padding-bottom: 40px;
 }
-.banner-section .section-title .primary-btn-two a {
+.banner-content-wrap .banner-wrapper .banner-content .section-title .primary-btn-two a {
   background-color: var(--primary-color);
   transition: all 0.5s ease-out;
   color: var(--white-color);
@@ -4680,14 +4694,41 @@ header.style-2 .header-area.inner-page {
   border-radius: 6px;
   display: inline-block;
 }
-.banner-section .section-title .primary-btn-two a:hover {
+.banner-content-wrap .banner-wrapper .banner-content .section-title .primary-btn-two a:hover {
   background-color: var(--title-color-1);
   color: var(--white-color);
 }
-.banner-section .swiper-slide {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.banner-content-wrap .slider-btn-groups .prevButton {
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  transform: translateY(-50%);
+  z-index: 99;
+  right: 100px;
+  position: absolute;
+  left: 70px;
+  top: 45%;
+}
+.banner-content-wrap .slider-btn-groups .nextButton {
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  transform: translateY(-50%);
+  z-index: 99;
+  right: 100px;
+  position: absolute;
+  right: 70px;
+  top: 45%;
 }
 
 .blog-service-section .section-title {
@@ -4695,7 +4736,7 @@ header.style-2 .header-area.inner-page {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 684px;
   width: 100%;
   padding-bottom: 54px;
 }
@@ -5051,6 +5092,9 @@ header.style-2 .header-area.inner-page {
   color: var(--title-color-2);
   margin: 0;
 }
+.process-section .process-card {
+  position: relative;
+}
 .process-section .process-card .process.img img {
   display: flex;
   align-items: center;
@@ -5078,6 +5122,29 @@ header.style-2 .header-area.inner-page {
   width: 100%;
   color: rgb(63, 78, 80);
   margin: 0;
+}
+.process-section .process-card .count-number {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+}
+.process-section .process-card .count-number span {
+  font-family: var(--font-manrope);
+  font-weight: 600;
+  background-color: #84A17D;
+  color: var(--white-color);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0;
+}
+.process-section .process-card .curved-arrow {
+  position: absolute;
+  top: 9%;
+  left: 100%;
 }
 
 .subscribe-section .subscribe-img {
@@ -6009,9 +6076,11 @@ header.style-2 .header-area.inner-page {
   border-radius: 18px;
 }
 .blog-post-section-two .blog-card .blog-content {
+  background: linear-gradient(0deg, rgb(21, 60, 60), rgba(21, 60, 60, 0));
   position: absolute;
   padding: 28px;
   bottom: 0%;
+  border-radius: 18px;
 }
 .blog-post-section-two .blog-card .blog-content .blog-meta {
   margin-bottom: 8px;

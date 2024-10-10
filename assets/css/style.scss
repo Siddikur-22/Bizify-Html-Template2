@@ -3175,8 +3175,8 @@ header.style-1 {
       }
     }
   }
-  .testimonial-wrap {
-    .testimonial-card {
+  
+  .testimonial-card {
       @include xxl-down-device() {
         padding: 35px 25px;
       }
@@ -3280,7 +3280,7 @@ header.style-1 {
         }
       }
     }
-  }
+ 
 }
 // our testimonials section end
 // faq section start
@@ -3997,22 +3997,22 @@ header.style-1 {
               clip-path: inset(-2px 100% -3px -2px);
             }
           }
-          &:hover {
-            // svg{
-            //   path{
-            //     &:first-child{
-            //       transform: translateX(5px);
-            //     }
-            //     &:last-child{
-            //       transform: translateX(-5px);
-            //     }
-            //   }
-            // }
-            // svg {
-            //   animation: qode-draw 0.75s cubic-bezier(0.57, 0.39, 0, 0.86) 1
-            //     forwards;
-            // }
-          }
+          // &:hover {
+          //   // svg{
+          //   //   path{
+          //   //     &:first-child{
+          //   //       transform: translateX(5px);
+          //   //     }
+          //   //     &:last-child{
+          //   //       transform: translateX(-5px);
+          //   //     }
+          //   //   }
+          //   // }
+          //   // svg {
+          //   //   animation: qode-draw 0.75s cubic-bezier(0.57, 0.39, 0, 0.86) 1
+          //   //     forwards;
+          //   // }
+          // }
         }
         .mobile-menu-btn {
           display: none;
@@ -4154,7 +4154,7 @@ header.style-1 {
               background: var(--white-color);
               border: 1px solid #0d172014;
               text-align: left;
-              z-index: 1;
+              z-index: 99;
               > li {
                 i {
                   position: absolute;
@@ -5028,56 +5028,99 @@ header.style-1 {
     }
   }
 // banner-section start
-.banner-section{
-  .section-title {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 856px;
-    width: 100%;
-    h2 {
-      font-family: var(--font-unbounded-sans);
-      font-weight: 500;
-      font-size: 54px;
-      line-height: 64px;
-      color:var(--title-color-1);
-      margin: 0;
-      padding-bottom: 16px;
-    }
-    p{
-      font-family: var(--font-manrope);
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 30px;
-      color: rgba(244, 245, 246, 1);
-      margin: 0;
-      padding-bottom: 40px;
-    }
-    .primary-btn-two {
-      a {
-        background-color: var(--primary-color);
-        transition: all 0.5s ease-out;
-        color: var(--white-color);
-        font-family: var(--font-manrope);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 14px;
-        padding: 22px 48px;
-        border-radius: 6px;
-        display: inline-block;
-        &:hover {
-          background-color: var(--title-color-1);
-          color: var(--white-color);
-        }
-      }
-    }
-  
-    
-  }
-  .swiper-slide{
-    background-size: cover;
+.banner-content-wrap{
+  position: relative;
+  .banner-wrapper{
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    min-height: 100vh;
+    padding: 200px 0 220px;
+    .banner-content{
+      .section-title {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 565px;
+        width: 100%;
+        text-align: start;
+        h2 {
+          font-family: var(--font-unbounded-sans);
+          font-weight: 600;
+          font-size: 70px;
+          line-height: 84px;
+          color:var(--white-color);
+          margin: 0;
+          padding-bottom: 20px;
+        }
+        p{
+          font-family: var(--font-manrope);
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+          color: rgba(244, 245, 246, 1);
+          margin: 0;
+          padding-bottom: 40px;
+        }
+        .primary-btn-two {
+          a {
+            background-color: var(--primary-color);
+            transition: all 0.5s ease-out;
+            color: var(--white-color);
+            font-family: var(--font-manrope);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 22px 48px;
+            border-radius: 6px;
+            display: inline-block;
+            &:hover {
+              background-color: var(--title-color-1);
+              color: var(--white-color);
+            }
+          }
+        }
+      
+        
+      }
+    }
     
+  }
+  .slider-btn-groups{
+    .prevButton{
+      height: 60px;
+      width: 60px;
+      border-radius: 6px;
+      background:rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.35s;
+      transform: translateY(-50%);
+      z-index: 99;
+      right: 100px;
+      position: absolute;
+      left: 70px;
+      top: 45%
+    }
+    .nextButton{
+      height: 60px;
+      width: 60px;
+      border-radius: 6px;
+      background:rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.35s;
+      transform: translateY(-50%);
+      z-index: 99;
+      right: 100px;
+      position: absolute;
+      right: 70px;
+      top: 45%;
+    }
   }
 }
 // banner-section end
@@ -5088,7 +5131,7 @@ header.style-1 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    max-width: 550px;
+    max-width: 684px;
     width: 100%;
     padding-bottom: 54px;
     h2 {
@@ -5476,6 +5519,7 @@ header.style-1 {
 // solution-section end
 // process section start
 .process-section{
+  
   .section-title {
     display: flex;
     align-items: center;
@@ -5494,15 +5538,16 @@ header.style-1 {
     }
   }
   .process-card{
+    position: relative;
    .process.img{
     img{
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    
+  
    }
-    .process-content{
+  .process-content{
       text-align: center;
       padding-top: 24px;
       h2{
@@ -5524,7 +5569,30 @@ header.style-1 {
         color: rgba(63, 78, 80, 1);
         margin: 0;
       }
+  }
+  .count-number{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    span{
+      font-family: var(--font-manrope);
+      font-weight: 600;
+      background-color: #84A17D;
+      color: var(--white-color);
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0;
     }
+  }
+  .curved-arrow{
+    position: absolute;
+    top:9%;
+    left: 100%;
+  }
   }
 }
 // process section end
@@ -6551,9 +6619,11 @@ header.style-1 {
       }
     }
     .blog-content {
+      background: linear-gradient(0deg,rgb(21, 60, 60,1),rgb(21, 60, 60,0));
       position: absolute;
       padding: 28px;
       bottom: 0%;
+      border-radius: 18px;
       .blog-meta {
         margin-bottom: 8px;
         display: flex;
