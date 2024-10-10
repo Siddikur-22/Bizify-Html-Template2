@@ -789,9 +789,6 @@ header.style-1 .header-area .nav-right .right-sidebar-button svg {
     clip-path: inset(-2px 100% -3px -2px);
   }
 }
-header.style-1 .header-area .nav-right .right-sidebar-button:hover svg {
-  animation: qode-draw 0.75s cubic-bezier(0.57, 0.39, 0, 0.86) 1 forwards;
-}
 header.style-1 .header-area .nav-right .mobile-menu-btn {
   display: none;
   visibility: hidden;
@@ -1010,7 +1007,6 @@ header.style-1 .header-area .main-menu ul > li ul.sub-menu > li > a::before {
   position: absolute;
   bottom: -1px;
   left: 0;
-  background: linear-gradient(90deg, #fff, #7572fd, #fff);
   width: 100%;
   height: 1px;
   transform: scaleX(0);
@@ -3556,8 +3552,6 @@ header.style-1 .header-area.inner-page {
   align-items: center;
   background-color: var(--primary-color);
   width: 100%;
-  position: absolute;
-  top: 0%;
 }
 @media (max-width: 1199px) {
   .topbar-area.two {
@@ -3655,14 +3649,11 @@ header.style-1 .header-area.inner-page {
 
 header.style-2 {
   width: 100%;
-  z-index: 99;
   transition: all 0.8s ease-out 0s;
   background-color: transparent;
-  position: absolute;
-  top: 10%;
+  background-color: var(--white-color);
 }
 header.style-2 .header-area {
-  background-color: var(--white-color);
   border-radius: 10px;
   min-height: 96px;
   height: 100%;
@@ -3734,9 +3725,6 @@ header.style-2 .header-area .nav-right .right-sidebar-button svg {
     -webkit-clip-path: inset(-2px 100% -3px -2px);
     clip-path: inset(-2px 100% -3px -2px);
   }
-}
-header.style-2 .header-area .nav-right .right-sidebar-button:hover svg {
-  animation: qode-draw 0.75s cubic-bezier(0.57, 0.39, 0, 0.86) 1 forwards;
 }
 header.style-2 .header-area .nav-right .mobile-menu-btn {
   display: none;
@@ -3955,7 +3943,6 @@ header.style-2 .header-area .main-menu ul > li ul.sub-menu > li > a::before {
   position: absolute;
   bottom: -1px;
   left: 0;
-  background: linear-gradient(90deg, #fff, #7572fd, #fff);
   width: 100%;
   height: 1px;
   transform: scaleX(0);
@@ -4657,69 +4644,33 @@ header.style-2 .header-area.inner-page {
   border-bottom: 1px solid rgba(var(--title-color-opc), 0.08);
 }
 
-.banner-section {
-  position: relative;
-}
-.banner-section .banner-wrapper {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100%;
-  padding: 240px 0 260px;
-}
-.banner-section .banner-wrapper .section-title {
-  max-width: 550px;
+.banner-section .section-title {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 856px;
   width: 100%;
 }
-.banner-section .banner-wrapper .section-title h2 {
+.banner-section .section-title h2 {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
   font-size: 54px;
   line-height: 64px;
-  color: var(--title-color-2);
+  color: var(--title-color-1);
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
-.banner-section .banner-wrapper .section-title p {
+.banner-section .section-title p {
   font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: var(--paragraph-color-2);
+  color: rgb(244, 245, 246);
   margin: 0;
   padding-bottom: 40px;
 }
-.banner-section .banner-wrapper .section-title ul {
-  display: flex;
-  align-items: center;
-  gap: 108px;
-}
-.banner-section .banner-wrapper .section-title ul li {
-  position: relative;
-}
-.banner-section .banner-wrapper .section-title ul li .single-counter h3 {
-  font-family: var(--font-unbounded-sans);
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 46px;
-  color: var(--title-color-1);
-  margin: 0;
-  padding-bottom: 4px;
-}
-.banner-section .banner-wrapper .section-title ul li .single-counter span {
-  font-family: var(--font-manrope);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
-  color: #3F4E50;
-  margin: 0;
-}
-.banner-section .banner-wrapper .section-title .primary-btn-two a {
+.banner-section .section-title .primary-btn-two a {
   background-color: var(--primary-color);
+  transition: all 0.5s ease-out;
   color: var(--white-color);
   font-family: var(--font-manrope);
   font-weight: 500;
@@ -4729,53 +4680,14 @@ header.style-2 .header-area.inner-page {
   border-radius: 6px;
   display: inline-block;
 }
-.banner-section .banner-wrapper .section-title .primary-btn-two a:hover {
+.banner-section .section-title .primary-btn-two a:hover {
   background-color: var(--title-color-1);
   color: var(--white-color);
 }
-.banner-section .slider-btn-groups .slider-btn {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: var(--accordion-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.35s;
-  position: absolute;
-  left: 70px;
-  top: 60%;
-  transform: translateY(-50%);
-  z-index: 99;
-}
-@media (max-width: 1399px) {
-  .banner-section .slider-btn-groups .slider-btn {
-    left: 35px;
-  }
-}
-@media (max-width: 991px) {
-  .banner-section .slider-btn-groups .slider-btn {
-    display: none;
-    visibility: hidden;
-  }
-}
-.banner-section .slider-btn-groups .slider-btn.next-1 {
-  right: 70px;
-  left: unset;
-}
-@media (max-width: 1399px) {
-  .banner-section .slider-btn-groups .slider-btn.next-1 {
-    right: 35px;
-  }
-}
-.banner-section .slider-btn-groups .slider-btn svg {
-  transition: 0.35s;
-}
-.banner-section .slider-btn-groups .slider-btn svg path {
-  stroke: #D9D9D9;
-}
-.banner-section .slider-btn-groups .slider-btn:hover svg path {
-  stroke: #000;
+.banner-section .swiper-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .blog-service-section .section-title {
