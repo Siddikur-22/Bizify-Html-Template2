@@ -30,31 +30,30 @@ $(document).ready(function() {
     });
     // swiper slider end
     
-// testimonial slider start
-
-    var swiper = new Swiper('.testimonial-slider', {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 25,
-        speed: 2500,
-        effect: 'fade',             // Use the fade effect
-        fadeEffect: {
-          crossFade: true           // Enable cross-fade transition
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: '.home3-testimonial-next',
-            prevEl: '.home3-testimonial-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-    // testimonial slider end
+// testimonial slider start two
+var swiper = new Swiper('.testimonial-slider-two', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 25,
+    speed: 2500,
+    effect: 'fade',             // Use the fade effect
+    fadeEffect: {
+      crossFade: true           // Enable cross-fade transition
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.home2-testimonial-next',
+        prevEl: '.home2-testimonial-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+    // testimonial slider end two
 
     // logo area marquee start
     $(".marquee_text").marquee({
@@ -71,3 +70,23 @@ $(document).ready(function() {
 
     }
     // logo area marquee end
+// testimonial slider section start
+    var swiper = new Swiper('.testimonial-slider', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 25,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.home2-testimonial-next',
+            prevEl: '.home2-testimonial-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    
+    });
+    // testimonial slider section end

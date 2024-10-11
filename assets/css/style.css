@@ -5509,7 +5509,7 @@ header.style-2 .header-area.inner-page {
   align-items: center;
   gap: 24px;
 }
-.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev {
+.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home2-testimonial-prev {
   background-color: #ffffff;
   transition: all 0.5s ease-out;
   width: 50px;
@@ -5519,14 +5519,14 @@ header.style-2 .header-area.inner-page {
   align-items: center;
   justify-content: center;
 }
-.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev:hover {
+.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home2-testimonial-prev:hover {
   background-color: var(--primary-color);
   border: 1px solid --primary-color;
 }
-.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-prev:hover svg path {
+.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home2-testimonial-prev:hover svg path {
   fill: white;
 }
-.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next {
+.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home2-testimonial-next {
   background-color: #ffffff;
   transition: all 0.5s ease-out;
   width: 50px;
@@ -5536,11 +5536,11 @@ header.style-2 .header-area.inner-page {
   align-items: center;
   justify-content: center;
 }
-.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next:hover {
+.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home2-testimonial-next:hover {
   background-color: var(--primary-color);
   border: 1px solid --primary-color;
 }
-.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home3-testimonial-next:hover svg path {
+.our-testimonial-section-two .slider-btn-and-pagination-wrap .slider-btn-group .home2-testimonial-next:hover svg path {
   fill: white;
 }
 .our-testimonial-section-two .testimonial-wrap .testimonial-card {
