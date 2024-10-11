@@ -3844,11 +3844,8 @@ header.style-1 {
 // ==================================
 // home-2 --------------- start
 // ==================================
-// topbar-area start
-// navbar and topbar start
-
-
-  .topbar-area.two {
+// top-bar start
+  .top-bar-area.two {
     padding: 14px 0;
     margin: 0 20px;
     height: 54px;
@@ -3947,6 +3944,9 @@ header.style-1 {
     }
    
   }
+  // top-bar end 
+  // header style 1 start
+  
   header.style-2 {
     width: 100%;
     transition: all 0.8s ease-out 0s;
@@ -5053,18 +5053,18 @@ header.style-1 {
       }
     }
   }
+  // header style 1 end
 // banner-section start
-.banner-content-wrap{
+.banner-content-wrap{ 
   position: relative;
   .banner-wrapper{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
-    align-items: start;
-    justify-content: start;
-    min-height: 100vh;
-    padding: 200px 0 220px;
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px;
     .banner-content{
       .section-title {
         margin: 0 auto;
@@ -5091,7 +5091,6 @@ header.style-1 {
           padding-bottom: 40px;
         }
         .primary-btn-two {
-          a {
             background-color: var(--primary-color);
             transition: all 0.5s ease-out;
             color: var(--white-color);
@@ -5099,14 +5098,13 @@ header.style-1 {
             font-weight: 500;
             font-size: 14px;
             line-height: 14px;
-            padding: 22px 48px;
+            padding: 22px 51px;
             border-radius: 6px;
             display: inline-block;
             &:hover {
               background-color: var(--title-color-1);
               color: var(--white-color);
             }
-          }
         }
       
         
@@ -5151,7 +5149,7 @@ header.style-1 {
 }
 // banner-section end
 // client-service-section start
-.blog-service-section{
+.client-service-section{
   .section-title {
     display: flex;
     align-items: center;
@@ -5165,7 +5163,7 @@ header.style-1 {
       font-weight: 500;
       font-size: 54px;
       line-height: 64px;
-      color: var(--title-color-2);
+      color:var(--title-color-1);
       margin: 0;
     }
     p {
@@ -5224,7 +5222,6 @@ header.style-1 {
       }
     }
   }
-  .service-card-wrapper{
     .service-card{
       background-color: rgba(244, 245, 246, 1);
       padding:25px 28px;
@@ -5248,6 +5245,15 @@ header.style-1 {
           }
         }
       }
+      .icon.two{
+       &:hover{
+        svg{
+          path{
+            fill: var(--white-color);
+          }
+       }
+        }
+      }
       .content{
         h2{
           font-family: var(--font-unbounded-sans);
@@ -5292,84 +5298,14 @@ header.style-1 {
               stroke: var(--white-color);
             }
           }
+         
         }
-        .content{
-          h2{
-            color: var(--white-color);
-          }
-          p{
-            color: rgba(244, 245, 246, 1);
-          }
-        }
-      }
-    }
-    .service-card-2{
-      background-color: rgba(244, 245, 246, 1);
-      padding:25px 28px;
-      border-radius: 18px;
-      .icon{
-        background-color: rgba(132, 161, 125, 0.5);
-        width: 70px;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 6px;
-        padding: 17px;
-        margin-bottom: 58px;
-        &:hover{
-          background-color: var(--primary-color);
+        .icon.two{
           svg{
             path{
               fill: var(--white-color);
             }
-          }
-        }
-      }
-      .content{
-        h2{
-          font-family: var(--font-unbounded-sans);
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 30px;
-          color: var(--title-color-1);
-          margin: 0;
-          padding-bottom: 8px;
-        }
-        p{
-          font-family: var(--font-manrope);
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 26px;
-          color: rgba(88, 91, 111, 1);
-          margin: 0;
-          padding-bottom: 20px;
-          max-width: 250px;
-          width: 100%;
-        }
-        .learn-more{
-          a{
-            font-family: var(--font-unbounded-sans);
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 14px;
-            color: rgba(132, 161, 125, 1);
-            margin: 0;
-            svg{
-              margin-left: 4px;
-            }
-          }
-        }
-      }
-      &:hover{
-        background-color:var(--span-color);
-        transition: all 0.5s ease-out;
-        .icon{
-          svg{
-            path{
-              fill: var(--white-color);
-            }
-          }
+         }
         }
         .content{
           h2{
@@ -5447,24 +5383,14 @@ header.style-1 {
         }
       }
     }
-  }
 }
 // client-service-section end
 // solution-section start
 .solution-section-two {
   background-color: #F4F5F6;
   position: relative;
-  .about-img {
-    margin-left: 40px;
-   img{
-    max-width: 636px;
-    width: 1090%;
-   }
-  }
+
   .section-title {
-    max-width: 550px;
-    width: 100%;
-    padding-top: 90px;
     h2 {
       font-family: var(--font-unbounded-sans);
       font-weight: 500;
@@ -5559,7 +5485,7 @@ header.style-1 {
       font-weight: 500;
       font-size: 54px;
       line-height: 64px;
-      color: var(--title-color-2);
+      color:var(--title-color-1);
       margin: 0;
     }
   }
@@ -5626,16 +5552,13 @@ header.style-1 {
 .subscribe-section{
   .subscribe-img{
     position: relative;
-    height: 100%;
    img{
-    height: 82.8%;
-    object-fit: cover;
     width: 100%;
    }
    .video-area{
     position: absolute;
-    top: 45%;
-    left: 45%;
+    top: 42%;
+    left: 46%;
     background-color: var(--primary-color);
     width: 80px;
     height: 80px;
@@ -5647,10 +5570,14 @@ header.style-1 {
   }
   .subscribe-content{
     background-color: var(--accordion-color);
-    height: 82.8%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
   .section-title {
-    margin: 0 auto;
     padding-left: 85px;
+    flex-direction: column;
+    justify-content: center;
     
     h2 {
       font-family: var(--font-unbounded-sans);
@@ -6199,12 +6126,7 @@ header.style-1 {
 // faq-section-two start
 .faq-section-two {
   position: relative;
-  .faq-img {
-   img{
-    max-width: 638px;
-    width: 1090%;
-   }
-  }
+  .faq-content-wrap{
   .section-title {
     max-width: 586px;
     width: 100%;
@@ -6341,19 +6263,18 @@ header.style-1 {
     }
   }
 }
+}
 // faq-section-two end
-
-// function section start
-.functions-section {
+// countdown section start
+.countdown-section {
   background-color:var(--title2-color);
   position: relative;
-  .featured-card {
+  .single-counter {
    background-color: rgba(255, 255, 255, 0.1);
    border-radius: 10px;
-    .content {
-      padding: 45px 65px;
-      text-align: center;
-
+   padding: 45px 65px;
+   text-align: center;
+    .number {
       h2 {
         color:var(--white-color);
         font-family:var(--font-unbounded-sans);
@@ -6366,15 +6287,14 @@ header.style-1 {
         margin: 0;
         padding-bottom: 8px;
       }
-
-      h5 {
-        color: var(--white-color);
-        font-family:var(--font-manrope);
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 30px;
-        margin: 0;
-      }
+    }
+    span{
+      color: var(--white-color);
+      font-family:var(--font-manrope);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0;
     }
 
     &.style-2 {
@@ -6387,10 +6307,8 @@ header.style-1 {
       border-radius: 10px;
     }
   }
-
 }
-// function section end
-
+// countdown section end
 // why-choose-us-section start
 .contact-section {
   background-color: rgba(244, 245, 246, 1);
@@ -6446,7 +6364,7 @@ header.style-1 {
         }
       }
     }
-   .contact-card{
+   .address{
     display: flex;
     align-items: center;
     gap: 67px;
@@ -6454,8 +6372,10 @@ header.style-1 {
     border-bottom: 1px solid #E3E3EC;
     max-width: 593px;
     width: 100%;
-    .featured-card {
+    .address-area {
       gap: 24px;
+      max-width: 220px;
+      width: 100%;
       .icon {
         background-color: var(--faq-colors);
         height: 48px;
@@ -6468,7 +6388,8 @@ header.style-1 {
       }
       .content {
         padding-top: 20px;
-        h5 {
+        
+        span{
           font-family: var(--font-unbounded-sans);
           font-weight: 500;
           font-size: 20px;
@@ -6477,49 +6398,15 @@ header.style-1 {
           margin: 0;
           padding-bottom: 8px;
         }
-        p {
+        a{
           font-family: var(--font-manrope);
           font-weight: 400;
           font-size: 16px;
           line-height: 26px;
           color: var(--title-color-2);
-          max-width: 220px;
-          width: 100%;
-        }
-        
-      }
-    }
-    .featured-card-two{
-      gap: 24px;
-      .icon {
-        background-color: var(--faq-colors);
-        height: 48px;
-        width: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 6px;
-        
-      }
-      .content {
-        padding-top: 20px;
-        h5 {
-          font-family: var(--font-unbounded-sans);
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 30px;
-          color: var(--title-color-1);
-          margin: 0;
-          padding-bottom: 8px;
-        }
-        p {
-          font-family: var(--font-manrope);
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 26px;
-          color: var(--title-color-2);
-          max-width: 152px;
-          width: 100%;
+          &:hover{
+            color:var(--primary-color);
+          }
         }
         
       }
@@ -6639,7 +6526,7 @@ header.style-1 {
 
   .blog-card {
     position: relative;
-    .card-img {
+    .blog-img {
       img {
         border-radius: 18px;
       }
@@ -6754,7 +6641,6 @@ header.style-1 {
       }
     }
   &:hover{
-
     .learn-more{
       opacity: 1;
     }
@@ -6833,15 +6719,19 @@ header.style-1 {
         align-items: center;
         gap:10px ;
         padding-bottom: 12px;
+        
         .content{
-          span{
+          align-items: center;
+         h6{
+           margin: 0;
+          a{
             font-family: var(--font-manrope);
             font-weight: 400;
             font-size: 16px;
             line-height: 26px;
-            margin: 0;
             color: var(--white-color);
           }
+         }
         }
       }
     }
@@ -6868,6 +6758,9 @@ header.style-1 {
               line-height: 30px;
               color: var(--white-color);
               margin: 0;
+              &:hover{
+                color: var(--primary-color);
+              }
             }
           }
         }
