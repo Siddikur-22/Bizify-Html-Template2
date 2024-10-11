@@ -4682,7 +4682,7 @@ header.style-2 .header-area.inner-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 1000px;
+  padding: 200px 0;
 }
 .banner-content-wrap .banner-wrapper .banner-content .section-title {
   margin: 0 auto;
