@@ -57,4 +57,17 @@ $(document).ready(function() {
     // testimonial slider end
 
     // logo area marquee start
+    $(".marquee_text").marquee({
+        direction: "left",
+        duration: 45000,
+        gap: 50,
+        delayBeforeStart: 0,
+        duplicated: true,
+        startVisible: true,
+    });
+
+    function scrollTo() {
+        $(window).scrollTo({ top: 0, behavior: 'smooth' });
+
+    }
     // logo area marquee end
