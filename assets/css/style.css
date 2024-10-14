@@ -24,6 +24,7 @@
   --paragraph-color-two: #3F4E50;
   --accordion-color:#153C3C;
   --title2-color:#153C3C;
+  --footer-bg-color:rgba(23, 36, 38, 1);
 }
 
 html {
@@ -4909,6 +4910,11 @@ header.style-2 .header-area.inner-page {
   max-width: 170px;
   width: 100%;
 }
+.client-service-section .live-chat-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .client-service-section .live-chat-card .content h2 {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
@@ -5170,6 +5176,10 @@ header.style-2 .header-area.inner-page {
   width: 100%;
   border-radius: 6px;
   margin: 0;
+}
+.subscribe-section .subscribe-content .section-title .subscribe-form-wrap button {
+  display: inline-flex;
+  border-radius: 6px;
 }
 .subscribe-section .subscribe-content .section-title .subscribe-form-wrap button a {
   font-family: var(--font-unbounded-sans);
@@ -5618,6 +5628,10 @@ header.style-2 .header-area.inner-page {
 .faq-section-two {
   position: relative;
 }
+.faq-section-two .faq-content-wrap {
+  max-width: 586px;
+  width: 100%;
+}
 .faq-section-two .faq-content-wrap .section-title {
   max-width: 586px;
   width: 100%;
@@ -5751,7 +5765,7 @@ header.style-2 .header-area.inner-page {
 .countdown-section .single-counter {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding: 45px 65px;
+  padding: 44px 65px;
   text-align: center;
 }
 .countdown-section .single-counter .number h2 {
@@ -5976,6 +5990,7 @@ header.style-2 .header-area.inner-page {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .blog-post-section-two .section-title h2 {
   font-family: var(--font-unbounded-sans);
@@ -6102,7 +6117,7 @@ header.style-2 .header-area.inner-page {
 }
 
 .footer-section-2 {
-  background-color: var(--primary-color-2);
+  background-color: var(--footer-bg-color);
 }
 .footer-section-2 .section-title {
   margin: 0 auto;
@@ -6145,10 +6160,10 @@ header.style-2 .header-area.inner-page {
   color: var(--white-color);
 }
 .footer-section-2 .footer-menu-wrap {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(82, 93, 113, 0.5);
 }
 .footer-section-2 .footer-menu-wrap .logo-and-social-media-area .footer-logo {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 .footer-section-2 .footer-menu-wrap .logo-and-social-media-area .footer-content p {
   font-family: var(--font-manrope);
@@ -6159,7 +6174,7 @@ header.style-2 .header-area.inner-page {
   width: 100%;
   color: var(--white-color);
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .footer-section-2 .footer-menu-wrap .logo-and-social-media-area .hotline-area {
   display: flex;
@@ -6180,6 +6195,9 @@ header.style-2 .header-area.inner-page {
   line-height: 26px;
   color: var(--white-color);
 }
+.footer-section-2 .footer-menu-wrap .logo-and-social-media-area .hotline-area.two {
+  padding-bottom: 0px;
+}
 .footer-section-2 .footer-menu-wrap .footer-widget .widget-title h4 {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
@@ -6190,7 +6208,7 @@ header.style-2 .header-area.inner-page {
   padding-bottom: 20px;
 }
 .footer-section-2 .footer-menu-wrap .footer-widget .menu-container .widget-list li {
-  padding-bottom: 10px;
+  margin-bottom: 12px;
 }
 .footer-section-2 .footer-menu-wrap .footer-widget .menu-container .widget-list li a {
   font-family: var(--font-manrope);
@@ -6202,6 +6220,9 @@ header.style-2 .header-area.inner-page {
 }
 .footer-section-2 .footer-menu-wrap .footer-widget .menu-container .widget-list li a:hover {
   color: var(--primary-color);
+}
+.footer-section-2 .footer-menu-wrap .footer-widget .menu-container .widget-list li:last-child {
+  margin-bottom: 0;
 }
 .footer-section-2 .footer-menu-wrap .subscribe-form-wrap .subscribe-form {
   border-radius: 5px;
@@ -6237,8 +6258,9 @@ header.style-2 .header-area.inner-page {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  display: flex;
-  padding-top: 28px;
+}
+.footer-section-2 .footer-bottom-wrap .footer-bottom .copy-write-area {
+  padding-top: 35px;
 }
 .footer-section-2 .footer-bottom-wrap .footer-bottom .copy-write-area p {
   font-family: var(--font-manrope);
@@ -6247,6 +6269,9 @@ header.style-2 .header-area.inner-page {
   line-height: 30px;
   color: var(--white-color);
   margin: 0;
+}
+.footer-section-2 .footer-bottom-wrap .footer-bottom .footer-bottom-right {
+  padding-top: 28px;
 }
 .footer-section-2 .footer-bottom-wrap .footer-bottom .footer-bottom-right .social-media-list ul {
   display: flex;

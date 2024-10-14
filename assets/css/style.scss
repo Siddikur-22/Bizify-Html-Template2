@@ -25,6 +25,7 @@
   --paragraph-color-two: #3F4E50;
   --accordion-color:#153C3C;
   --title2-color:#153C3C;
+  --footer-bg-color:rgba(23, 36, 38, 1);
 }
 
 @mixin eighteen-down-device {
@@ -5331,6 +5332,9 @@ header.style-1 {
       
       }
       .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h2{
           font-family: var(--font-unbounded-sans);
           font-weight: 500;
@@ -5618,6 +5622,8 @@ header.style-1 {
         margin: 0;
       }
       button{
+        display: inline-flex;
+        border-radius: 6px;
         a{
         font-family: var(--font-unbounded-sans);
         font-weight: 500;
@@ -6127,6 +6133,8 @@ header.style-1 {
 .faq-section-two {
   position: relative;
   .faq-content-wrap{
+    max-width: 586px;
+    width: 100%;
   .section-title {
     max-width: 586px;
     width: 100%;
@@ -6272,7 +6280,7 @@ header.style-1 {
   .single-counter {
    background-color: rgba(255, 255, 255, 0.1);
    border-radius: 10px;
-   padding: 45px 65px;
+   padding: 44px 65px;
    text-align: center;
     .number {
       h2 {
@@ -6506,11 +6514,11 @@ header.style-1 {
 // why-choose-us-section end
 // blog-post-section-start
 .blog-post-section-two {
- 
   .section-title {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     h2 {
       font-family: var(--font-unbounded-sans);
       font-weight: 500;
@@ -6650,7 +6658,7 @@ header.style-1 {
 // blog-post-section-end.
 // footer section start.
 .footer-section-2{
-  background-color: var(--primary-color-2);
+  background-color:var(--footer-bg-color);
   .section-title {
     margin: 0 auto;
     text-align: center;
@@ -6696,10 +6704,10 @@ header.style-1 {
     
   }
   .footer-menu-wrap {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(82, 93, 113, 0.5);
     .logo-and-social-media-area {
       .footer-logo {
-        padding-bottom: 20px;
+        padding-bottom: 24px;
       }
       .footer-content {
         p {
@@ -6711,7 +6719,7 @@ header.style-1 {
           width: 100%;
           color: var(--white-color);
           margin: 0;
-          padding-bottom: 30px;
+          padding-bottom: 20px;
         }
       }
       .hotline-area{
@@ -6719,7 +6727,6 @@ header.style-1 {
         align-items: center;
         gap:10px ;
         padding-bottom: 12px;
-        
         .content{
           align-items: center;
          h6{
@@ -6733,6 +6740,9 @@ header.style-1 {
           }
          }
         }
+      }
+      .hotline-area.two{
+        padding-bottom: 0px;
       }
     }
     .footer-widget {
@@ -6750,7 +6760,7 @@ header.style-1 {
       .menu-container {
         .widget-list {
           li {
-            padding-bottom: 10px;
+            margin-bottom: 12px;
             a {
               font-family: var(--font-manrope);
               font-weight: 400;
@@ -6762,9 +6772,13 @@ header.style-1 {
                 color: var(--primary-color);
               }
             }
+            &:last-child{
+              margin-bottom: 0;
+            }
           }
         }
       }
+     
     }
     .subscribe-form-wrap {
       .subscribe-form {
@@ -6806,9 +6820,9 @@ header.style-1 {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      display: flex;
-      padding-top: 28px;
+  
       .copy-write-area {
+        padding-top: 35px;
         p {
           font-family: var(--font-manrope);
           font-weight: 400;
@@ -6819,6 +6833,7 @@ header.style-1 {
         }
       }
       .footer-bottom-right {
+        padding-top: 28px;
         .social-media-list {
           ul {
             display: flex;
@@ -6851,35 +6866,6 @@ header.style-1 {
   }
 }
 // footer section end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // ==================================
