@@ -4706,7 +4706,7 @@ header.style-2 .header-area.inner-page {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: rgb(244, 245, 246);
+  color: var(--paragraph-color-1);
   margin: 0;
   padding-bottom: 40px;
 }
@@ -5219,7 +5219,7 @@ header.style-2 .header-area.inner-page {
   font-weight: 500;
   font-size: 54px;
   line-height: 64px;
-  color: var(--title-color-2);
+  color: var(--title-color-1);
   margin: 0;
   padding-bottom: 20px;
 }
@@ -5653,7 +5653,7 @@ header.style-2 .header-area.inner-page {
   font-weight: 500;
   font-size: 54px;
   line-height: 64px;
-  color: var(--title-color-2);
+  color: var(--title-color-1);
   margin: 0;
 }
 .faq-section-two .faq-content-wrap .section-title p {
@@ -5824,7 +5824,7 @@ header.style-2 .header-area.inner-page {
   font-weight: 500;
   font-size: 54px;
   line-height: 64px;
-  color: var(--title-color-2);
+  color: var(--title-color-1);
   margin: 0;
   padding-bottom: 20px;
 }
@@ -6012,7 +6012,7 @@ header.style-2 .header-area.inner-page {
   font-weight: 500;
   font-size: 54px;
   line-height: 64px;
-  color: var(--title2-color);
+  color: var(--primary-color-2);
   margin: 0;
   padding-bottom: 54px;
   max-width: 636px;
