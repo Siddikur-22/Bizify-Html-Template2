@@ -4969,8 +4969,7 @@ header.style-2 .header-area.inner-page {
 }
 
 .solution-section-two {
-  background-color: #F4F5F6;
-  position: relative;
+  background-color: var(--paragraph-color-1);
 }
 .solution-section-two .section-title h2 {
   font-family: var(--font-unbounded-sans);
@@ -4993,10 +4992,11 @@ header.style-2 .header-area.inner-page {
 .solution-section-two .section-title ul {
   display: flex;
   align-items: center;
-  gap: 108px;
+  gap: 54px;
 }
-.solution-section-two .section-title ul li {
-  position: relative;
+.solution-section-two .section-title ul li .single-counter {
+  border-right: 1px solid rgba(63, 78, 80, 0.5);
+  padding-right: 66px;
 }
 .solution-section-two .section-title ul li .single-counter h3 {
   font-family: var(--font-unbounded-sans);
@@ -5014,6 +5014,9 @@ header.style-2 .header-area.inner-page {
   line-height: 30px;
   color: #3F4E50;
   margin: 0;
+}
+.solution-section-two .section-title ul li .single-counter.two {
+  border-right: none;
 }
 .solution-section-two .section-title .primary-btn-two a {
   background-color: var(--primary-color);

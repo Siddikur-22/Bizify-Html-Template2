@@ -5401,8 +5401,7 @@ header.style-1 {
 // client-service-section end
 // solution-section start
 .solution-section-two {
-  background-color: #F4F5F6;
-  position: relative;
+background-color: var(--paragraph-color-1);
 
   .section-title {
     h2 {
@@ -5426,10 +5425,11 @@ header.style-1 {
  ul{
   display: flex;
   align-items: center;
-  gap: 108px;
+  gap: 54px;
   li{
-    position: relative;
     .single-counter{
+      border-right: 1px solid rgba(63, 78, 80, 0.5);
+      padding-right: 66px;
       h3{
        font-family: var(--font-unbounded-sans);
        font-weight: 500;
@@ -5447,12 +5447,14 @@ header.style-1 {
        color: #3F4E50;
        margin: 0;
       }
-  
-      }
+    }
+    .single-counter.two{
+      border-right: none;
+    }
   }
   
  }
-    .primary-btn-two {
+  .primary-btn-two {
       a {
         background-color: var(--primary-color);
         color: var(--white-color);
