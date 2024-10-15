@@ -90,3 +90,30 @@ var swiper = new Swiper('.testimonial-slider-two', {
     
     });
     // testimonial slider section end
+
+
+    // home 3 testimonial section start
+    var swiper = new Swiper('.testimonial-swiper-slide', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 25,
+        // speed: 2500,
+        // effect: 'fade',             // Use the fade effect
+        // fadeEffect: {
+        //   crossFade: true           // Enable cross-fade transition
+        // },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.nextButton3',
+            prevEl: '.prevButton3 ',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    
+    });
+    // home 3 testimonial section end
