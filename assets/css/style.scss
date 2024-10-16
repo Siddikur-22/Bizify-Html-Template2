@@ -288,6 +288,9 @@ ul {
 .pb-130 {
   padding-bottom: 130px;
 }
+.mb-10{
+  margin-bottom: 10px;
+}
 .mb-150 {
   margin-bottom: 150px;
 }
@@ -8114,6 +8117,7 @@ header.style-3 {
     }
   }
 }
+// header style 1 end
 // banner section start
 .banner-section {
   background-image: url("../image/banner-img/banner-img-3.png");
@@ -8121,6 +8125,7 @@ header.style-3 {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+  position: relative;
   .banner-content {
     .section-title {
       text-align: center;
@@ -8210,6 +8215,13 @@ header.style-3 {
       }
     }
   }
+  .background-shape{
+    img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  }
 }
 // banner section end
 // client-logo-area  start
@@ -8266,10 +8278,19 @@ header.style-3 {
       margin: 0;
     }
   }
+  .amazing-card{
+    position: relative;
   .service-card.three {
     background-color: var(--paragraph-color-1);
     border-radius: 18px;
-    padding: 20px;
+    padding:20px;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform-origin: bottom;
+    cursor: pointer;
     .icon {
       background-color: rgba(132, 161, 125, 1);
       width: 70px;
@@ -8330,10 +8351,12 @@ header.style-3 {
   }
   .service-card.four {
     background-color: var(--paragraph-color-1);
-    padding: 14px 20px;
+    padding:20px;
     border-radius: 18px;
     .service-image {
       margin-bottom: 14px;
+      position: relative;
+      overflow: hidden;
     }
     .content {
       h2 {
@@ -8349,6 +8372,7 @@ header.style-3 {
 
       .learn-more {
         margin-top: 14px;
+        padding-bottom: 7px;
         a {
           font-family: var(--font-unbounded-sans);
           font-weight: 500;
@@ -8362,7 +8386,14 @@ header.style-3 {
         }
       }
     }
+  
   }
+  &:hover{
+  .service-card.three{
+    opacity: 1;
+  }
+  }
+}
 }
 // solution card section end
 // digital marketer section start
@@ -8923,7 +8954,6 @@ header.style-3 {
             border-radius: 25px; 
             border: none;
             padding: 0;
-            background-color: var(--white-color);
             @include sm-down-device(){
               min-width: 28px;
               max-width: 28px;
@@ -8938,8 +8968,8 @@ header.style-3 {
               box-shadow: none;
             }
             &.active{
-              color: var(--white-color);
-              background: var(--primary-color);
+              color:var(--primary-color) ;
+              background: var(--white-color);
               border: none;
             }  
           }
@@ -8964,7 +8994,7 @@ header.style-3 {
           padding: 3px 10px;
           border-radius: 50px;
           position: absolute;
-          top: -8px;
+          top: -15px;
           right: -62px;
           @include sm-down-device(){
             top: -18px;
@@ -9084,7 +9114,6 @@ header.style-3 {
   .testimonial-content-wrap {
     position: relative;
     .testimonial-wrapper {
-   
       .icon{
         display: flex;
         align-items: center;
@@ -9093,6 +9122,7 @@ header.style-3 {
       }
       .content{
         text-align: center;
+        
         h3{
           font-family: var(--font-manrope);
           font-weight: 400;
@@ -9100,6 +9130,7 @@ header.style-3 {
           line-height: 52px;
           letter-spacing: -3%;
           margin-bottom: 28px;
+      
         }
       }
       .client-area{
@@ -9145,8 +9176,8 @@ header.style-3 {
         z-index: 99;
         right: 100px;
         position: absolute;
-        left: 70px;
-        top: 45%;
+        left: 190px;
+        top: 48%;
         
       }
       .nextButton3 {
@@ -9162,8 +9193,8 @@ header.style-3 {
         z-index: 99;
         right: 100px;
         position: absolute;
-        right: 70px;
-        top: 45%;
+        right: 190px;
+        top: 48%;
       }
     }
   }
@@ -9337,6 +9368,68 @@ header.style-3 {
       }
     }
   }
+  .blog-wrap-content{
+    .blog-image{
+      border-radius: 18px 0 0 18px;
+    }
+    .blog-image-content{
+      background-color: var(--paragraph-color-1);
+      border-radius:0 18px 18px 0;
+      padding: 24px 26px 0 ;
+      ul{
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        gap: 25px;
+       li{
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          margin: 0;
+          font-family: var(--font-manrope);
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: var(--span-color-3);
+          h5{
+            margin: 0;
+            font-family: var(--font-manrope);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: var(--span-color-3);
+            span{
+              margin: 0;
+            }
+          }
+        }
+    
+      }
+        h3{
+          font-family:var(--font-unbounded-sans);
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          color: var(--title-color-1);
+          max-width:391px;
+          width: 100%;
+          margin-bottom: 24px;
+        }
+        .read-more.two{
+          a {
+            font-family: var(--font-unbounded-sans);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            color: rgba(132, 161, 125, 1);
+            margin: 0;
+            svg {
+              margin-left: 6px;
+            }
+          }
+        }
+    }
+  }
 }
 // blog-card-section end
 
@@ -9374,7 +9467,7 @@ header.style-3 {
         background-color: var(--white-color);
         transition: all 0.5s ease-out;
         color: var(--title-color-1);
-        font-family: var(--font-manrope);
+        font-family:var(--font-unbounded-sans);
         font-weight: 500;
         font-size: 14px;
         line-height: 14px;
@@ -9481,33 +9574,34 @@ header.style-3 {
         }
       }
      .social-media-wrapper{
-    ul{
+      ul{
       display: flex;
       align-items: center;
       gap: 10px;
       .single-media{
         position: relative;
         border-radius: 6px;
-      
         .icon{
           position: absolute;
           transition: 0.5s ease;
           opacity: 0;
           position: absolute;
-          top: 42%;
-          right: 38%;
+          top: 50%;
+          right: 25%;
           transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           text-align: center;
-        
         }
-        &:hover .icon {
+       &:hover{
+
+        .icon{
           opacity: 1;
-        
         }
-       
+       }
       }
+     
     }
+   
      }
     }
     .subscribe-form-wrap {
@@ -9587,7 +9681,7 @@ header.style-3 {
   }
 }
 // footer section end
-// header style 1 end
+
 // ==================================
 // home-3 --------------- end
 // ==================================

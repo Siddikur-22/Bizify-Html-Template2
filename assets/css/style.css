@@ -188,6 +188,10 @@ ul {
   padding-bottom: 130px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-150 {
   margin-bottom: 150px;
 }
@@ -7471,6 +7475,7 @@ header.style-3 .header-area.inner-page {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
 .banner-section .banner-content .section-title {
   text-align: center;
@@ -7555,6 +7560,11 @@ header.style-3 .header-area.inner-page {
   width: 100%;
   margin: 0;
 }
+.banner-section .background-shape img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 
 .client-logo-area .section-title {
   margin-bottom: 21px;
@@ -7599,12 +7609,22 @@ header.style-3 .header-area.inner-page {
   color: var(--paragraph-color-2);
   margin: 0;
 }
-.solution-section .service-card.three {
+.solution-section .amazing-card {
+  position: relative;
+}
+.solution-section .amazing-card .service-card.three {
   background-color: var(--paragraph-color-1);
   border-radius: 18px;
   padding: 20px;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform-origin: bottom;
+  cursor: pointer;
 }
-.solution-section .service-card.three .icon {
+.solution-section .amazing-card .service-card.three .icon {
   background-color: rgb(132, 161, 125);
   width: 70px;
   height: 70px;
@@ -7615,13 +7635,13 @@ header.style-3 .header-area.inner-page {
   padding: 17px;
   margin-bottom: 58px;
 }
-.solution-section .service-card.three .icon:hover {
+.solution-section .amazing-card .service-card.three .icon:hover {
   background-color: var(--primary-color);
 }
-.solution-section .service-card.three .icon:hover svg path {
+.solution-section .amazing-card .service-card.three .icon:hover svg path {
   stroke: var(--white-color);
 }
-.solution-section .service-card.three .content h2 {
+.solution-section .amazing-card .service-card.three .content h2 {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
   font-size: 20px;
@@ -7630,7 +7650,7 @@ header.style-3 .header-area.inner-page {
   margin: 0;
   padding-bottom: 8px;
 }
-.solution-section .service-card.three .content p {
+.solution-section .amazing-card .service-card.three .content p {
   font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 16px;
@@ -7642,10 +7662,10 @@ header.style-3 .header-area.inner-page {
   padding-bottom: 28px;
   border-bottom: 1px solid var(--border-color-3);
 }
-.solution-section .service-card.three .content .learn-more {
+.solution-section .amazing-card .service-card.three .content .learn-more {
   margin-top: 14px;
 }
-.solution-section .service-card.three .content .learn-more a {
+.solution-section .amazing-card .service-card.three .content .learn-more a {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
   font-size: 14px;
@@ -7653,18 +7673,20 @@ header.style-3 .header-area.inner-page {
   color: rgb(132, 161, 125);
   margin: 0;
 }
-.solution-section .service-card.three .content .learn-more a svg {
+.solution-section .amazing-card .service-card.three .content .learn-more a svg {
   margin-left: 4px;
 }
-.solution-section .service-card.four {
+.solution-section .amazing-card .service-card.four {
   background-color: var(--paragraph-color-1);
-  padding: 14px 20px;
+  padding: 20px;
   border-radius: 18px;
 }
-.solution-section .service-card.four .service-image {
+.solution-section .amazing-card .service-card.four .service-image {
   margin-bottom: 14px;
+  position: relative;
+  overflow: hidden;
 }
-.solution-section .service-card.four .content h2 {
+.solution-section .amazing-card .service-card.four .content h2 {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
   font-size: 20px;
@@ -7674,10 +7696,11 @@ header.style-3 .header-area.inner-page {
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border-color-3);
 }
-.solution-section .service-card.four .content .learn-more {
+.solution-section .amazing-card .service-card.four .content .learn-more {
   margin-top: 14px;
+  padding-bottom: 7px;
 }
-.solution-section .service-card.four .content .learn-more a {
+.solution-section .amazing-card .service-card.four .content .learn-more a {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
   font-size: 14px;
@@ -7685,8 +7708,11 @@ header.style-3 .header-area.inner-page {
   color: rgb(132, 161, 125);
   margin: 0;
 }
-.solution-section .service-card.four .content .learn-more a svg {
+.solution-section .amazing-card .service-card.four .content .learn-more a svg {
   margin-left: 4px;
+}
+.solution-section .amazing-card:hover .service-card.three {
+  opacity: 1;
 }
 
 .digital-company-section {
@@ -8205,7 +8231,6 @@ header.style-3 .header-area.inner-page {
   border-radius: 25px;
   border: none;
   padding: 0;
-  background-color: var(--white-color);
 }
 @media (max-width: 576px) {
   .plans-section .pricing-plan-tab-area .nav-area nav .nav-tabs .nav-link {
@@ -8223,8 +8248,8 @@ header.style-3 .header-area.inner-page {
   box-shadow: none;
 }
 .plans-section .pricing-plan-tab-area .nav-area nav .nav-tabs .nav-link.active {
-  color: var(--white-color);
-  background: var(--primary-color);
+  color: var(--primary-color);
+  background: var(--white-color);
   border: none;
 }
 .plans-section .pricing-plan-tab-area .nav-area span {
@@ -8247,7 +8272,7 @@ header.style-3 .header-area.inner-page {
   padding: 3px 10px;
   border-radius: 50px;
   position: absolute;
-  top: -8px;
+  top: -15px;
   right: -62px;
 }
 @media (max-width: 576px) {
@@ -8412,8 +8437,8 @@ header.style-3 .header-area.inner-page {
   z-index: 99;
   right: 100px;
   position: absolute;
-  left: 70px;
-  top: 45%;
+  left: 190px;
+  top: 48%;
 }
 .testimonial-section .testimonial-content-wrap .slider-btn-groups .nextButton3 {
   height: 60px;
@@ -8428,8 +8453,8 @@ header.style-3 .header-area.inner-page {
   z-index: 99;
   right: 100px;
   position: absolute;
-  right: 70px;
-  top: 45%;
+  right: 190px;
+  top: 48%;
 }
 
 .blog-card-section .section-title {
@@ -8586,6 +8611,63 @@ header.style-3 .header-area.inner-page {
   max-width: 443px;
   width: 100%;
 }
+.blog-card-section .blog-wrap-content .blog-image {
+  border-radius: 18px 0 0 18px;
+}
+.blog-card-section .blog-wrap-content .blog-image-content {
+  background-color: var(--paragraph-color-1);
+  border-radius: 0 18px 18px 0;
+  padding: 24px 26px 0;
+}
+.blog-card-section .blog-wrap-content .blog-image-content ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 25px;
+}
+.blog-card-section .blog-wrap-content .blog-image-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--span-color-3);
+}
+.blog-card-section .blog-wrap-content .blog-image-content ul li h5 {
+  margin: 0;
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--span-color-3);
+}
+.blog-card-section .blog-wrap-content .blog-image-content ul li h5 span {
+  margin: 0;
+}
+.blog-card-section .blog-wrap-content .blog-image-content h3 {
+  font-family: var(--font-unbounded-sans);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--title-color-1);
+  max-width: 391px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.blog-card-section .blog-wrap-content .blog-image-content .read-more.two a {
+  font-family: var(--font-unbounded-sans);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgb(132, 161, 125);
+  margin: 0;
+}
+.blog-card-section .blog-wrap-content .blog-image-content .read-more.two a svg {
+  margin-left: 6px;
+}
 
 .cta-section {
   background-color: var(--primary-color);
@@ -8620,7 +8702,7 @@ header.style-3 .header-area.inner-page {
   background-color: var(--white-color);
   transition: all 0.5s ease-out;
   color: var(--title-color-1);
-  font-family: var(--font-manrope);
+  font-family: var(--font-unbounded-sans);
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -8717,8 +8799,8 @@ header.style-3 .header-area.inner-page {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
-  top: 42%;
-  right: 38%;
+  top: 50%;
+  right: 25%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
