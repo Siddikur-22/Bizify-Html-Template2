@@ -1,8 +1,8 @@
-// --------------------------
-//          Main js file
-// --------------------------
-// swiper slider start
-$(document).ready(function() {
+    // --------------------------
+    //       Main js file
+    // --------------------------
+    // swiper slider start
+    $(document).ready(function() {
     // Swiper: Slider
         new Swiper('.banner-swiper-slide', {
             loop: true,
@@ -30,29 +30,30 @@ $(document).ready(function() {
     });
     // swiper slider end
     
-// testimonial slider start two
-var swiper = new Swiper('.testimonial-slider-two', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 25,
-    speed: 2500,
-    effect: 'fade',             // Use the fade effect
-    fadeEffect: {
-      crossFade: true           // Enable cross-fade transition
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: '.home2-testimonial-next',
-        prevEl: '.home2-testimonial-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
+    // testimonial slider start two
+    var swiper = new Swiper('.testimonial-slider-two', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 25,
+        speed: 2500,
+        effect: 'fade',             // Use the fade effect
+        fadeEffect: {
+        crossFade: true           // Enable cross-fade transition
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.home2-testimonial-next',
+            prevEl: '.home2-testimonial-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
     // testimonial slider end two
 
     // logo area marquee start
@@ -64,7 +65,6 @@ var swiper = new Swiper('.testimonial-slider-two', {
         duplicated: true,
         startVisible: true,
     });
-
     function scrollTo() {
         $(window).scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -136,5 +136,32 @@ var swiper = new Swiper('.testimonial-slider-two', {
             clickable: true,
         },
     });
+    
     // home 3 testimonial section end
 
+	// sidebar
+	$('.right-sidebar-button').on("click", function () {
+		$('.right-sidebar-menu').addClass('show-right-menu');
+	});
+	$('.right-sidebar-close-btn').on("click", function () {
+		$('.right-sidebar-menu').removeClass('show-right-menu');
+	});
+
+    // Search Btn
+	$(".search-btn").on("click", function (e) {
+
+		let parent = $(this).parent();
+
+		parent.find(".search-input, .lang-card").toggleClass("active");
+
+		e.stopPropagation();
+
+	});
+	$(document).on("click", function (e) {
+		if (!$(e.target).closest(".search-input, .search-btn").length) {
+			$(".search-input").removeClass("active");
+		}
+	});
+	$(".serch-close").on("click", function (e) {
+		$(".search-input").removeClass("active");
+	});
