@@ -9819,7 +9819,7 @@ header.style-3 {
         @include sm-mobile-device(){
           display: flex;
           align-items: start;
-          justify-content: startF;
+          justify-content: start;
         }
         li {
           font-family: var(--font-manrope);

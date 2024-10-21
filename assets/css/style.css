@@ -9232,7 +9232,7 @@ header.style-3 .header-area.inner-page {
   .plans-section .pricing-card .pricing-content ul {
     display: flex;
     align-items: start;
-    justify-content: startF;
+    justify-content: start;
   }
 }
 .plans-section .pricing-card .pricing-content ul li {
