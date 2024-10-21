@@ -751,7 +751,7 @@ ul {
 }
 
 // Button
-.primary-btn {
+.primary-btn-3 {
   border-radius: 5px;
   background-color: var(--primary-color);
   font-family:var(--font-manrope);
@@ -1125,7 +1125,7 @@ header.style-1 {
         }
       }
     }
-    .primary-btn {
+    .primary-btn-1 {
       background-color: var(--primary-color);
       font-family: var(--font-unbounded-sans);
       color: var(--white-color);
@@ -9236,6 +9236,10 @@ header.style-3 {
         font-size: 54px;
         line-height: 64px;
       }
+      @include sm-mobile-device(){
+        font-size: 50px;
+        line-height: 60px;
+      }
     }
   }
   .team-card {
@@ -9283,6 +9287,10 @@ header.style-3 {
         @include md-down-device(){
           bottom:30%;
           left: 15%;
+        }
+        @include sm-mobile-device(){
+          bottom:57%;
+          left: 10%;
         }
         li {
           position: relative;
@@ -9587,6 +9595,9 @@ header.style-3 {
       @include xl-down-device(){
         font-size: 47px;
       }
+      @include sm-mobile-device(){
+        font-size: 45px;
+      }
     }
   }
   .primary-btn-three {
@@ -9693,6 +9704,9 @@ header.style-3 {
       }
       @include xl-down-device(){
         font-size: 47px;
+      }
+      @include sm-mobile-device(){
+        font-size: 45px;
       }
     }
   }
@@ -10032,6 +10046,9 @@ header.style-3 {
       @include xl-down-device(){
         font-size: 47px;
       }
+      @include sm-mobile-device(){
+        font-size: 45px;
+      }
     }
   }
   .primary-btn-three {
@@ -10066,7 +10083,6 @@ header.style-3 {
     }
     .blog-image{
       position: relative;
-      
       img{
         width: 100%;
        
@@ -10141,6 +10157,10 @@ header.style-3 {
             max-width: 443px;
             width: 100%;
             text-decoration: underline;
+            @include sm-mobile-device(){
+              font-size: 20px;
+              
+            }
            }
           }
         
@@ -10210,9 +10230,7 @@ header.style-3 {
   }
   .blog-wrap-content{
     .blog-image{
-   
     a{
-    
     img{
       max-width: 180px;
       @include xxl-down-device(){
@@ -10222,8 +10240,8 @@ header.style-3 {
         max-width:250px;
         width: 100%;
       }
-      @include md-down-device(){
-    
+      @include sm-mobile-device(){
+        display: none;
       }
     
     }
@@ -10235,6 +10253,9 @@ header.style-3 {
       padding: 24px 26px 0 ;
       @include xxl-down-device(){
         padding: 10px 25px 0;
+      }
+      @include sm-mobile-device(){
+        border-radius: 18px;
       }
       ul{
         display: flex;
