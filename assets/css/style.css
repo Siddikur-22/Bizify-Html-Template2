@@ -7013,6 +7013,11 @@ header.style-3 .header-area .nav-right .search-bar .search-input {
     max-width: 460px;
   }
 }
+@media (max-width: 576px) {
+  header.style-3 .header-area .nav-right .search-bar .search-input {
+    max-width: 285px;
+  }
+}
 header.style-3 .header-area .nav-right .search-bar .search-input.active {
   display: block;
   transform: scaleY(1);
@@ -7968,8 +7973,9 @@ header.style-3 .header-area.inner-page {
 }
 @media (max-width: 991px) {
   .home3-banner-section .banner-content .section-title {
-    max-width: 600px;
+    max-width: 550px;
     width: 100%;
+    padding: 10px;
   }
 }
 .home3-banner-section .banner-content .section-title h1 {
@@ -8011,12 +8017,6 @@ header.style-3 .header-area.inner-page {
   color: var(--paragraph-color-1);
   margin: 0;
   padding-bottom: 40px;
-}
-@media (max-width: 1199px) {
-  .home3-banner-section .banner-content .section-title p {
-    font-size: 17px;
-    padding-bottom: 30px;
-  }
 }
 .home3-banner-section .banner-content .section-title .button-group {
   margin-bottom: 54px;
@@ -8068,6 +8068,7 @@ header.style-3 .header-area.inner-page {
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .home3-banner-section .banner-content .banner-content-bottom .client-image .client-img {
   margin-left: -24px;
@@ -8113,6 +8114,11 @@ header.style-3 .header-area.inner-page {
 @media (max-width: 767px) {
   .home3-banner-content-bottom .background-shape {
     margin-top: -19px;
+  }
+}
+@media (max-width: 576px) {
+  .home3-banner-content-bottom .background-shape {
+    margin-top: -18px;
   }
 }
 .home3-banner-content-bottom .background-shape img {
@@ -8172,17 +8178,6 @@ header.style-3 .header-area.inner-page {
   line-height: 30px;
   color: var(--paragraph-color-2);
   margin: 0;
-}
-@media (max-width: 1399px) {
-  .solution-section .section-title p {
-    font-size: 17px;
-    line-height: 25px;
-  }
-}
-@media (max-width: 1199px) {
-  .solution-section .section-title p {
-    font-size: 16px;
-  }
 }
 .solution-section .amazing-card {
   position: relative;
@@ -8425,17 +8420,6 @@ header.style-3 .header-area.inner-page {
   color: var(--paragraph-color-2);
   margin: 0;
   padding-bottom: 40px;
-}
-@media (max-width: 1199px) {
-  .digital-company-section .section-title p {
-    font-size: 16px;
-    line-height: 25px;
-  }
-}
-@media (max-width: 1199px) {
-  .digital-company-section .section-title p {
-    padding-bottom: 25px;
-  }
 }
 .digital-company-section .section-title ul {
   display: flex;
@@ -9242,6 +9226,14 @@ header.style-3 .header-area.inner-page {
   display: grid;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 425px) {
+  .plans-section .pricing-card .pricing-content ul {
+    display: flex;
+    align-items: start;
+    justify-content: startF;
+  }
 }
 .plans-section .pricing-card .pricing-content ul li {
   font-family: var(--font-manrope);
@@ -9347,11 +9339,6 @@ header.style-3 .header-area.inner-page {
   .testimonial-section .testimonial-wrap .testimonial-card3 .content h3 {
     font-size: 18px;
     line-height: 1.6;
-  }
-}
-@media (max-width: 767px) {
-  .testimonial-section .testimonial-wrap .testimonial-card3 .content h3 {
-    font-size: 16px;
   }
 }
 .testimonial-section .testimonial-wrap .testimonial-card3 .client-area {
@@ -9792,13 +9779,6 @@ header.style-3 .header-area.inner-page {
   text-align: center;
   margin: 0 auto;
 }
-@media (max-width: 1199px) {
-  .cta-section .section-title p {
-    font-size: 16px;
-    max-width: 600px;
-    width: 100%;
-  }
-}
 .cta-section .section-title .primary-btn-two a {
   background-color: var(--white-color);
   transition: all 0.5s ease-out;
@@ -9842,11 +9822,6 @@ header.style-3 .header-area.inner-page {
   color: var(--span-color-3);
   margin: 0;
   padding-bottom: 30px;
-}
-@media (max-width: 1199px) {
-  .footer-section.three .footer-menu-wrap .logo-and-social-media-area .footer-content p {
-    font-size: 16px;
-  }
 }
 .footer-section.three .footer-menu-wrap .logo-and-social-media-area .social-media-list ul {
   display: flex;
@@ -9980,6 +9955,7 @@ header.style-3 .header-area.inner-page {
     display: grid;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
 .footer-section.three .footer-bottom-wrap .footer-bottom .copy-write-area p {

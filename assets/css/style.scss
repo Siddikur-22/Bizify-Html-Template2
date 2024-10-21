@@ -1076,38 +1076,7 @@ header.style-1 {
         svg {
           fill: var(--title-color);
         }
-        // @keyframes qode-draw {
-        //   0%,
-        //   100% {
-        //     -webkit-clip-path: inset(-2px -2px);
-        //     clip-path: inset(-2px -2px);
-        //   }
-        //   42% {
-        //     -webkit-clip-path: inset(-2px -2px -2px 100%);
-        //     clip-path: inset(-2px -2px -2px 100%);
-        //   }
-
-        //   43% {
-        //     -webkit-clip-path: inset(-2px 100% -3px -2px);
-        //     clip-path: inset(-2px 100% -3px -2px);
-        //   }
-        // }
-        // &:hover {
-        //   // svg{
-        //   //   path{
-        //   //     &:first-child{
-        //   //       transform: translateX(5px);
-        //   //     }
-        //   //     &:last-child{
-        //   //       transform: translateX(-5px);
-        //   //     }
-        //   //   }
-        //   // }
-        //   // svg {
-        //   //   animation: qode-draw 0.75s cubic-bezier(0.57, 0.39, 0, 0.86) 1
-        //   //     forwards;
-        //   // }
-        // }
+      
       }
       .mobile-menu-btn {
         display: none;
@@ -2169,6 +2138,7 @@ header.style-1 {
       @include sm-down-device() {
         font-size: 15px;
         margin-bottom: 20px;
+        
       }
     }
     .button-and-video-area {
@@ -7573,6 +7543,9 @@ header.style-3 {
             max-width: 460px;
           
           }
+          @include sm-down-device(){
+            max-width: 285px;
+          }
 
           &.active {
               display: block;
@@ -8631,8 +8604,9 @@ header.style-3 {
         width: 100%;
       }
       @include lg-down-device(){
-        max-width:600px ;
+        max-width:550px ;
         width: 100%;
+        padding: 10px;
       }
       h1 {
         font-family: var(--font-unbounded-sans);
@@ -8666,10 +8640,7 @@ header.style-3 {
         color: var(--paragraph-color-1);
         margin: 0;
         padding-bottom: 40px;
-        @include xl-down-device(){
-          font-size: 17px;
-          padding-bottom: 30px;
-        }
+       
       }
       .button-group {
         margin-bottom: 54px;
@@ -8720,6 +8691,8 @@ header.style-3 {
       display: flex;
       gap: 20px;
       align-items: center;
+      flex-wrap: wrap;
+   
       .client-image {
         .client-img {
           margin-left: -24px;
@@ -8737,6 +8710,7 @@ header.style-3 {
           margin: 0;
         }
       }
+   
     }
   }
   .banner-image{
@@ -8764,7 +8738,9 @@ header.style-3 {
   }
   @include md-down-device(){
     margin-top: -19px;
-    
+  }
+  @include sm-down-device(){
+    margin-top: -18px;
   }
     img{
       width: 100%;
@@ -8832,14 +8808,8 @@ header.style-3 {
       line-height: 30px;
       color: var(--paragraph-color-2);
       margin: 0;
-      @include xxl-down-device(){
-        font-size: 17px;
-        line-height: 25px;
-
-      }
-      @include xl-down-device(){
-        font-size: 16px;
-      }
+  
+  
     }
   }
   .amazing-card{
@@ -9057,13 +9027,7 @@ header.style-3 {
       color: var(--paragraph-color-2);
       margin: 0;
       padding-bottom: 40px;
-      @include xl-down-device(){
-        font-size: 16px;
-        line-height: 25px;
-      }
-      @include xl-down-device(){
-        padding-bottom: 25px;
-      }
+    
     }
     ul {
       display: flex;
@@ -9851,6 +9815,12 @@ header.style-3 {
         display: grid;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        @include sm-mobile-device(){
+          display: flex;
+          align-items: start;
+          justify-content: startF;
+        }
         li {
           font-family: var(--font-manrope);
           font-weight: 600;
@@ -9949,9 +9919,7 @@ header.style-3 {
           font-size: 18px;
           line-height: 1.6;
         }
-        @include md-down-device(){
-          font-size: 16px;
-        }
+      
         }
       }
       .client-area{
@@ -10384,11 +10352,7 @@ header.style-3 {
       width: 100%;
       text-align: center;
       margin: 0 auto;
-      @include xl-down-device(){
-        font-size: 16px;
-        max-width: 600px;
-        width: 100%;
-      }
+  
     }
     .primary-btn-two {
       a {
@@ -10436,9 +10400,7 @@ header.style-3 {
           color:var(--span-color-3);
           margin: 0;
           padding-bottom: 30px;
-          @include xl-down-device(){
-            font-size: 16px;
-          }
+         
         }
       }
       .social-media-list {
@@ -10598,6 +10560,7 @@ header.style-3 {
         display:grid;
         align-items: center;
         justify-content: center;
+        text-align: center;
         
   
       }

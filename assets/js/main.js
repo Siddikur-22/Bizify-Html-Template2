@@ -190,3 +190,6 @@
 	$('.menu-close-btn').on("click", function () {
 		$('.main-menu').removeClass('show-menu');
 	});
+
+
+    
