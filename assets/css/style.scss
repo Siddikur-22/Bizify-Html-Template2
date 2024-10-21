@@ -722,7 +722,7 @@ ul {
 .mb-100 {
   margin-bottom: 100px;
   @include xl-down-device(){
-    width: 104%;
+    width: 100%;
   }
 }
 
@@ -8594,6 +8594,7 @@ header.style-3 {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+
   .banner-content {
     margin-left: 32%;
     @include eighteen-down-device(){
@@ -8622,7 +8623,6 @@ header.style-3 {
     }
    
     .section-title {
-      text-align: center;
       max-width: 565px;
       width: 100%;
       text-align: start;
@@ -8740,6 +8740,7 @@ header.style-3 {
     }
   }
   .banner-image{
+    
     img{
       max-width: 100%;
       height: auto;
@@ -8763,6 +8764,7 @@ header.style-3 {
   }
   @include md-down-device(){
     margin-top: -19px;
+    
   }
     img{
       width: 100%;
@@ -9968,6 +9970,9 @@ header.style-3 {
      
     }
     .slider-btn-groups {
+      @include md-down-device(){
+        display: none;
+      }
       .prevButton3 {
         height: 60px;
         width: 60px;

@@ -149,6 +149,11 @@
 		$('.right-sidebar-menu').removeClass('show-right-menu');
 	});
 
+    jQuery('.dropdown-icon').on('click', function () {
+		jQuery(this).toggleClass('active').next('ul').slideToggle();
+		jQuery(this).parent().siblings().children('ul').slideUp();
+		jQuery(this).parent().siblings().children('.active').removeClass('active');
+	});
     // Search Btn
 	$(".search-btn").on("click", function (e) {
 

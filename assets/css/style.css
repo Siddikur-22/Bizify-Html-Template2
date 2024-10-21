@@ -702,7 +702,7 @@ ul {
 }
 @media (max-width: 1199px) {
   .mb-100 {
-    width: 104%;
+    width: 100%;
   }
 }
 
@@ -7956,7 +7956,6 @@ header.style-3 .header-area.inner-page {
   }
 }
 .home3-banner-section .banner-content .section-title {
-  text-align: center;
   max-width: 565px;
   width: 100%;
   text-align: start;
@@ -9359,6 +9358,11 @@ header.style-3 .header-area.inner-page {
   line-height: 26px;
   color: var(--span-color-3);
   margin: 0;
+}
+@media (max-width: 767px) {
+  .testimonial-section .testimonial-wrap .slider-btn-groups {
+    display: none;
+  }
 }
 .testimonial-section .testimonial-wrap .slider-btn-groups .prevButton3 {
   height: 60px;
