@@ -1,7 +1,9 @@
-    // --------------------------
+// --------------------------
     //       Main js file
     // --------------------------
     // swiper slider start
+"use strict";
+
     $(document).ready(function() {
     // Swiper: Slider
         new Swiper('.banner-swiper-slide', {
@@ -162,6 +164,24 @@
 			$(".search-input").removeClass("active");
 		}
 	});
-	$(".serch-close").on("click", function (e) {
+	$(".search-close").on("click", function (e) {
 		$(".search-input").removeClass("active");
+	});
+// side menu
+
+
+	// Preloader 
+	jQuery(window).on('load', function () {
+		$(".preloader").delay(1600).fadeOut("slow");
+	});
+
+	$('.sidebar-button').on("click", function () {
+        $(this).toggleClass('active');
+    });
+
+	document.querySelector('.sidebar-button').addEventListener('click', () =>
+		document.querySelector('.main-menu').classList.toggle('show-menu'));
+
+	$('.menu-close-btn').on("click", function () {
+		$('.main-menu').removeClass('show-menu');
 	});
