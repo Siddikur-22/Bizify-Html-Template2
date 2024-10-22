@@ -285,8 +285,15 @@ ul {
 }
 .pt-130 {
   padding-top: 130px;
+  @include xxl-device(){
+    padding-top: 115px;
+  }
+  @include xxl-down-device(){
+    padding-top: 94px;
+  }
+  
   @include xl-down-device(){
-    padding-top: 27px;
+    padding-top: 60px;
   }
   @include lg-down-device(){
     padding-top: 50px;
@@ -294,9 +301,15 @@ ul {
 }
 .pb-130 {
   padding-bottom: 130px;
+  @include seventeen-down-device(){
+    padding-bottom: 125px;
+  }
   @include xxl-down-device(){
-    padding-bottom: 110px;
+    padding-bottom: 90px;
   } 
+  @include xxl-device(){
+    padding-bottom: 115px;
+  }
   @include xl-down-device(){
     padding-bottom: 27px;
   }
@@ -2365,7 +2378,7 @@ header.style-1 {
         line-height: 14px;
         padding: 22px 48px;
         border-radius: 6px;
-        display: inline-block;
+        display: inline-flex;
         &:hover {
           background-color: var(--title-color-1);
           transition: all 0.5s ease-out;
@@ -2373,6 +2386,7 @@ header.style-1 {
         }
       }
     }
+  
   }
 }
 // about-section end
@@ -8594,7 +8608,7 @@ header.style-3 {
       margin-left: 28%;
     }
     @include seventeen-down-device(){
-      margin-left: 24%;
+      margin-left: 14%;
     }
     @include fifteen-down-device(){
       margin-left: 13%;
@@ -8752,6 +8766,9 @@ header.style-3 {
     margin-top: -25px;
   @include xl-down-device(){
     margin-top: -21px;
+  }
+  @include xxl-down-device(){
+    margin-top: -24px;
   }
   @include lg-down-device(){
     margin-top: -20px;
@@ -10494,6 +10511,10 @@ header.style-3 {
               @include xl-down-device(){
                 font-size: 16px;
               }
+              &:hover{
+              color: var(--primary-color);
+              transition: 0.35s;
+              }
             }
           }
         }
@@ -10637,6 +10658,10 @@ header.style-3 {
               }
              @include md-down-device(){
               font-size: 14px;
+             }
+             &:hover{
+              color: var(--primary-color);
+              transition: 0.35s;
              }
             }
           }

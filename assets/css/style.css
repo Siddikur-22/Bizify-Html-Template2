@@ -183,9 +183,19 @@ ul {
 .pt-130 {
   padding-top: 130px;
 }
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .pt-130 {
+    padding-top: 115px;
+  }
+}
+@media (max-width: 1399px) {
+  .pt-130 {
+    padding-top: 94px;
+  }
+}
 @media (max-width: 1199px) {
   .pt-130 {
-    padding-top: 27px;
+    padding-top: 60px;
   }
 }
 @media (max-width: 991px) {
@@ -197,9 +207,19 @@ ul {
 .pb-130 {
   padding-bottom: 130px;
 }
+@media (max-width: 1699px) {
+  .pb-130 {
+    padding-bottom: 125px;
+  }
+}
 @media (max-width: 1399px) {
   .pb-130 {
-    padding-bottom: 110px;
+    padding-bottom: 90px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .pb-130 {
+    padding-bottom: 115px;
   }
 }
 @media (max-width: 1199px) {
@@ -2247,7 +2267,7 @@ header.style-1 .header-area.inner-page {
   line-height: 14px;
   padding: 22px 48px;
   border-radius: 6px;
-  display: inline-block;
+  display: inline-flex;
 }
 .about-section .section-title .primary-btn-two a:hover {
   background-color: var(--title-color-1);
@@ -7969,7 +7989,7 @@ header.style-3 .header-area.inner-page {
 }
 @media (max-width: 1699px) {
   .home3-banner-section .banner-content {
-    margin-left: 24%;
+    margin-left: 14%;
   }
 }
 @media (max-width: 1499px) {
@@ -8139,6 +8159,11 @@ header.style-3 .header-area.inner-page {
 @media (max-width: 1199px) {
   .home3-banner-content-bottom .background-shape {
     margin-top: -21px;
+  }
+}
+@media (max-width: 1399px) {
+  .home3-banner-content-bottom .background-shape {
+    margin-top: -24px;
   }
 }
 @media (max-width: 991px) {
@@ -9933,6 +9958,10 @@ header.style-3 .header-area.inner-page {
     font-size: 16px;
   }
 }
+.footer-section.three .footer-menu-wrap .footer-widget .menu-container .widget-list li a:hover {
+  color: var(--primary-color);
+  transition: 0.35s;
+}
 .footer-section.three .footer-menu-wrap .newsletter-area .title h4 {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
@@ -10063,4 +10092,8 @@ header.style-3 .header-area.inner-page {
   .footer-section.three .footer-bottom-wrap .footer-bottom .footer-bottom-right ul li a {
     font-size: 14px;
   }
+}
+.footer-section.three .footer-bottom-wrap .footer-bottom .footer-bottom-right ul li a:hover {
+  color: var(--primary-color);
+  transition: 0.35s;
 }/*# sourceMappingURL=style.css.map */
