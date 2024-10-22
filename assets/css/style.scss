@@ -9709,7 +9709,7 @@ header.style-3 {
     text-align: center;
     max-width: 684px;
     width: 100%;
-    padding-bottom: 54px;
+    padding-bottom: 24px;
     h2 {
       font-family: var(--font-unbounded-sans);
       font-weight: 500;
@@ -9717,7 +9717,6 @@ header.style-3 {
       line-height: 64px;
       color: var(--title-color-1);
       margin: 0;
-      padding-bottom: 20px;
       @include fifteen-down-device(){
         font-size: 50px;
         line-height: 1.2;

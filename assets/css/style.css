@@ -9142,7 +9142,7 @@ header.style-3 .header-area.inner-page {
   text-align: center;
   max-width: 684px;
   width: 100%;
-  padding-bottom: 54px;
+  padding-bottom: 24px;
 }
 .plans-section .section-title h2 {
   font-family: var(--font-unbounded-sans);
@@ -9151,7 +9151,6 @@ header.style-3 .header-area.inner-page {
   line-height: 64px;
   color: var(--title-color-1);
   margin: 0;
-  padding-bottom: 20px;
 }
 @media (max-width: 1499px) {
   .plans-section .section-title h2 {
