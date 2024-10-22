@@ -298,6 +298,7 @@ ul {
   @include lg-down-device(){
     padding-top: 50px;
   }
+
 }
 .pb-130 {
   padding-bottom: 130px;
@@ -10444,6 +10445,9 @@ header.style-3 {
   background-color: var(--paragraph-color-1);
   .footer-menu-wrap {
     padding: 100px 0;
+    @include threefifty-down-device(){
+      padding: 60px 0;
+    }
     border-bottom: 1px solid var(--border-color-2);
     .logo-and-social-media-area {
       .footer-logo {

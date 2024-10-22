@@ -9904,6 +9904,11 @@ header.style-3 .header-area.inner-page {
   padding: 100px 0;
   border-bottom: 1px solid var(--border-color-2);
 }
+@media (max-width: 350px) {
+  .footer-section.three .footer-menu-wrap {
+    padding: 60px 0;
+  }
+}
 .footer-section.three .footer-menu-wrap .logo-and-social-media-area .footer-logo {
   padding-bottom: 20px;
 }
