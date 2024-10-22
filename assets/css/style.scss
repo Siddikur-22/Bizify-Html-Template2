@@ -8726,6 +8726,9 @@ header.style-3 {
       gap: 20px;
       align-items: center;
       flex-wrap: wrap;
+        @include threefifty-down-device(){
+          margin-left: 12px;
+        }
    
       .client-image {
         .client-img {

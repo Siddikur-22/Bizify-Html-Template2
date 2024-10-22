@@ -8125,6 +8125,11 @@ header.style-3 .header-area.inner-page {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 350px) {
+  .home3-banner-section .banner-content .banner-content-bottom {
+    margin-left: 12px;
+  }
+}
 .home3-banner-section .banner-content .banner-content-bottom .client-image .client-img {
   margin-left: -24px;
 }
