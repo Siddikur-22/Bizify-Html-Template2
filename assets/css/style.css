@@ -217,6 +217,16 @@ ul {
     padding-bottom: 50px;
   }
 }
+@media (max-width: 991px) {
+  .pb-130 {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .pb-130 {
+    padding-bottom: 70px;
+  }
+}
 
 .mb-10 {
   margin-bottom: 10px;
@@ -228,6 +238,11 @@ ul {
 
 .mb-28 {
   margin-bottom: 28px;
+}
+@media (max-width: 767px) {
+  .mb-28 {
+    margin-bottom: 14px;
+  }
 }
 
 .mb-24 {
@@ -403,6 +418,11 @@ ul {
 .mb-100 {
   margin-bottom: 100px;
 }
+@media (max-width: 1399px) {
+  .mb-100 {
+    margin-bottom: 80px;
+  }
+}
 
 .mb-120 {
   margin-bottom: 120px;
@@ -436,6 +456,11 @@ ul {
     margin-bottom: 90px;
   }
 }
+@media (max-width: 1199px) {
+  .mb-130 {
+    margin-bottom: 60px;
+  }
+}
 
 .mt-75 {
   margin-top: 75px;
@@ -464,9 +489,9 @@ ul {
 .mb-100 {
   margin-bottom: 100px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1399px) {
   .mb-100 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 }
 
@@ -700,9 +725,14 @@ ul {
 .mb-100 {
   margin-bottom: 100px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .mb-100 {
-    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .mb-100 {
+    margin-bottom: 40px;
   }
 }
 
@@ -983,6 +1013,11 @@ ul {
 @media (max-width: 1399px) {
   .topbar-area.two {
     padding: 8px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .topbar-area.two {
+    font-size: 40px;
   }
 }
 
@@ -8138,6 +8173,11 @@ header.style-3 .header-area.inner-page {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .client-logo-area .section-title h4 {
+    font-size: 18px;
+  }
+}
 .client-logo-area .logo-section-3 .logo-wrap .logo-area .logo-wrap {
   overflow: hidden;
   margin: 0 auto;
@@ -8169,6 +8209,11 @@ header.style-3 .header-area.inner-page {
 @media (max-width: 1199px) {
   .solution-section .section-title h2 {
     font-size: 45px;
+  }
+}
+@media (max-width: 576px) {
+  .solution-section .section-title h2 {
+    font-size: 40px;
   }
 }
 .solution-section .section-title p {
@@ -8608,8 +8653,8 @@ header.style-3 .header-area.inner-page {
 }
 @media (max-width: 425px) {
   .team-section.three .section-title h2 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 44px;
+    line-height: 55px;
   }
 }
 .team-section.three .team-card {
@@ -9011,6 +9056,12 @@ header.style-3 .header-area.inner-page {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+@media (max-width: 425px) {
+  .latest-projects-section .latest-card .latest-img .arrow-up-icon {
+    top: 40%;
+    right: 35%;
+  }
+}
 .latest-projects-section .latest-card .latest-img .arrow-up-icon svg {
   background-color: var(--primary-color);
   width: 70px;
@@ -9020,6 +9071,12 @@ header.style-3 .header-area.inner-page {
   justify-content: center;
   border-radius: 6px;
   padding: 24px;
+}
+@media (max-width: 425px) {
+  .latest-projects-section .latest-card .latest-img .arrow-up-icon svg {
+    width: 60px;
+    height: 60px;
+  }
 }
 .latest-projects-section .latest-card .latest-img:hover .arrow-up-icon {
   opacity: 1;
@@ -9074,7 +9131,7 @@ header.style-3 .header-area.inner-page {
 }
 @media (max-width: 425px) {
   .plans-section .section-title h2 {
-    font-size: 45px;
+    font-size: 43px;
   }
 }
 .plans-section .pricing-plan-tab-area .nav-area {
@@ -9317,6 +9374,7 @@ header.style-3 .header-area.inner-page {
   }
 }
 .testimonial-section .testimonial-wrap .testimonial-card3 .content h3 {
+  margin: 0;
   font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 34px;
@@ -9335,10 +9393,9 @@ header.style-3 .header-area.inner-page {
     font-size: 20px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 576px) {
   .testimonial-section .testimonial-wrap .testimonial-card3 .content h3 {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
   }
 }
 .testimonial-section .testimonial-wrap .testimonial-card3 .client-area {
@@ -9536,6 +9593,9 @@ header.style-3 .header-area.inner-page {
 .blog-card-section .blog-wrap .blog-image .blog-image-content ul li h5 span {
   margin: 0;
 }
+.blog-card-section .blog-wrap .blog-image .blog-image-content h3 {
+  margin: 0;
+}
 .blog-card-section .blog-wrap .blog-image .blog-image-content h3 a {
   font-family: var(--font-unbounded-sans);
   font-weight: 500;
@@ -9549,7 +9609,7 @@ header.style-3 .header-area.inner-page {
 }
 @media (max-width: 425px) {
   .blog-card-section .blog-wrap .blog-image .blog-image-content h3 a {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .blog-card-section .blog-wrap .blog-image .blog-write-side-content .blog-wrap.two {
