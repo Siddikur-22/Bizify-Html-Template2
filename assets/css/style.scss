@@ -8622,8 +8622,10 @@ header.style-3 {
     }
     @include xl-down-device(){
       margin-left: 10%;
-      
-
+    
+    }
+    @include md-device(){
+      margin-left: -15%;
     }
     @include lg-down-device(){
       margin-left: 5%;
@@ -9794,9 +9796,11 @@ header.style-3 {
           position: absolute;
           top: -15px;
           right: -62px;
+
           @include sm-down-device(){
-            top: -18px;
-            right: 0px;
+            top: -16px;
+            right: -40px;
+            width: 75px;
           }
         }
       }
@@ -10253,9 +10257,11 @@ header.style-3 {
   }
   .blog-wrap-content{
     .blog-image{
-    a{
+      a{
+
     img{
       max-width: 180px;
+    
       @include xxl-down-device(){
         max-width: 150px;
       }

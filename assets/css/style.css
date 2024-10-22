@@ -8010,6 +8010,11 @@ header.style-3 .header-area.inner-page {
     margin-left: 10%;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .home3-banner-section .banner-content {
+    margin-left: -15%;
+  }
+}
 @media (max-width: 991px) {
   .home3-banner-section .banner-content {
     margin-left: 5%;
@@ -9238,8 +9243,9 @@ header.style-3 .header-area.inner-page {
 }
 @media (max-width: 576px) {
   .plans-section .pricing-plan-tab-area .nav-area span strong {
-    top: -18px;
-    right: 0px;
+    top: -16px;
+    right: -40px;
+    width: 75px;
   }
 }
 .plans-section .pricing-card {
