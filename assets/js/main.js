@@ -23,12 +23,6 @@
         nextEl: ".prevButton",
         prevEl: ".nextButton",
       },
-      breakpoints: {
-        576: { slidesPerView: 1, spaceBetween: 15 },
-        768: { slidesPerView: 2, spaceBetween: 15 },
-        992: { slidesPerView: 3, spaceBetween: 20 },
-        1200: { slidesPerView: 1, spaceBetween: 15 },
-      },
     });
   });
   // swiper slider end
