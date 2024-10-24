@@ -1769,6 +1769,9 @@ header.style-1 .header-area .main-menu ul > li ul.sub-menu > li:hover .dropdown-
 header.style-1 .header-area .main-menu ul > li ul.sub-menu > li.active > a {
   color: var(--primary-color);
 }
+header.style-1 .header-area .main-menu ul > li ul.sub-menu > li.active > a:hover {
+  color: var(--primary-color);
+}
 header.style-1 .header-area .main-menu ul > li ul.sub-menu > li.active .dropdown-icon {
   color: var(--primary-color);
 }
@@ -3604,7 +3607,7 @@ header.style-1 .header-area.inner-page {
   background-image: url("../image/shape/shape.png");
   background-position: center center;
   background-size: cover;
-  transition: all 0.5s ease-out;
+  transition: transform 0.45s ease;
 }
 .pricing-plan-section .pricing-card:hover .pricing-top .plan-content {
   background-color: var(--primary-color);
@@ -4923,6 +4926,9 @@ header.style-2 .header-area .main-menu ul > li ul.sub-menu > li:hover .dropdown-
   color: var(--primary-color);
 }
 header.style-2 .header-area .main-menu ul > li ul.sub-menu > li.active > a {
+  color: var(--primary-color);
+}
+header.style-2 .header-area .main-menu ul > li ul.sub-menu > li.active > a:hover {
   color: var(--primary-color);
 }
 header.style-2 .header-area .main-menu ul > li ul.sub-menu > li.active .dropdown-icon {
@@ -8434,7 +8440,10 @@ header.style-3 .header-area .main-menu ul > li ul.sub-menu > li:hover .dropdown-
   color: var(--primary-color);
 }
 header.style-3 .header-area .main-menu ul > li ul.sub-menu > li.active > a {
-  color: var(--primary-color-2);
+  color: var(--primary-color);
+}
+header.style-3 .header-area .main-menu ul > li ul.sub-menu > li.active > a:hover {
+  color: var(--primary-color);
 }
 header.style-3 .header-area .main-menu ul > li ul.sub-menu > li.active .dropdown-icon {
   color: var(--primary-color);

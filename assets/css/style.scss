@@ -1821,6 +1821,9 @@ header.style-1 {
               &.active {
                 > a {
                   color: var(--primary-color);
+                  &:hover{
+                    color: var(--primary-color);
+                  }
                 }
 
                 .dropdown-icon {
@@ -3696,7 +3699,7 @@ header.style-1 {
       background-image: url("../image/shape/shape.png");
       background-position: center center;
       background-size: cover;
-      transition: all 0.50s ease-out;
+      transition: transform 0.45s ease;
       .pricing-top {
         .plan-content {
           background-color: var(--primary-color);
@@ -5093,7 +5096,10 @@ header.style-2 {
 
               &.active {
                 > a {
-                  color: var(--primary-color);
+                  color:var(--primary-color);
+                  &:hover{
+                    color: var(--primary-color);
+                  }
                 }
 
                 .dropdown-icon {
@@ -8780,7 +8786,10 @@ header.style-3 {
 
               &.active {
                 > a {
-                  color: var(--primary-color-2);
+                  color:var(--primary-color);
+                  &:hover{
+                    color: var(--primary-color);
+                  }
                 }
 
                 .dropdown-icon {
