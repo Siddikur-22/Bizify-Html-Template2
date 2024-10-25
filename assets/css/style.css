@@ -6127,6 +6127,11 @@ header.style-2 .header-area.inner-page {
     gap: 10px;
   }
 }
+@media (max-width: 576px) {
+  .subscribe-section .subscribe-content .section-title .subscribe-form-wrap {
+    padding-right: 10px;
+  }
+}
 .subscribe-section .subscribe-content .section-title .subscribe-form-wrap input {
   font-family: var(--font-manrope);
   font-weight: 400;
@@ -6194,7 +6199,7 @@ header.style-2 .header-area.inner-page {
   border-radius: 8px 8px 0 0;
   transition: all 0.5s ease-out;
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .team-section .team-card .team-img img {
     width: 100%;
   }

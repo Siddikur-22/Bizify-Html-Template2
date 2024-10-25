@@ -6334,6 +6334,9 @@ header.style-2 {
         @include lg-device(){
           gap: 10px;
         }
+        @include sm-down-device(){
+          padding-right: 10px;
+        }
      
         input {
           font-family: var(--font-manrope);
@@ -6401,10 +6404,10 @@ header.style-2 {
       img {
         border-radius: 8px 8px 0 0;
         transition: all 0.5s ease-out;
-        @include sm-mobile-device(){
+        @include sm-down-device(){
           width: 100%;
-
         }
+
       }
       .social-list {
         padding: 0;
