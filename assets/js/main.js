@@ -26,8 +26,31 @@
     });
   });
   // swiper slider end
-
-  // testimonial slider start two
+  // testimonial slider one start
+  var swiper = new Swiper(".testimonial-slider", { 
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 25,
+    speed: 2500,
+    effect: "fade", // Use the fade effect
+    fadeEffect: {
+      crossFade: true, // Enable cross-fade transition
+    },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".home1-next",
+      prevEl: ".home1-prev",
+    },
+  });
+  // testimonial slider section end
+  // testimonial slider two start
   var swiper = new Swiper(".testimonial-slider-two", {
     loop: true,
     slidesPerView: 1,
@@ -66,26 +89,7 @@
     $(window).scrollTo({ top: 0, behavior: "smooth" });
   }
   // logo area marquee end
-  // testimonial slider section start
-  var swiper = new Swiper(".testimonial-slider", { 
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 25,
-    speed: 2500,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".home2-testimonial-next",
-      prevEl: ".home2-testimonial-prev",
-    },
-  });
-  // testimonial slider section end
+
 
   // home 3 testimonial section start
   var swiper = new Swiper(".testimonial-swiper-slide", {
